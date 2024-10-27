@@ -7,3 +7,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-
 Hitbox Expander Hub 
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/StarFoxGmng%20Hub%20%7C%20Universal%20Hitbox%20%7C%20Version%20Finished"))()
+
+# Executor - Gui
+Server Side Executor + No Server Side Executor
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/Server%20Side%20%2B%20No%20Server%20Side%20Executor"))()
