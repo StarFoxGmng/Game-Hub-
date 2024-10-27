@@ -1,14 +1,14 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/notjohnnylol/seliwareload/refs/heads/main/putinautoexec"))()
 local mewing10 = loadstring(game:HttpGet('https://raw.githubusercontent.com/Breadido/Mewing10/main/mewing10_source.lua'))()
 mewing10.NormalNotification({
-	Title = "『SeliWare』",
+	Title = "Ǥ҉̷҉̵҉̸҉̷҉̵҉̸҉̡҉̡҉̼҉̱҉͎҉͎҉̞҉̼҉̱҉͎҉͎҉̞҉ͤ҉ͬ҉̅҉ͤ҉ͬ『SeliWare』",
 	Description = "This Hub Open Source",
 	ImagesID = "http://www.roblox.com/asset/?id=124591979096235", 
 	SoundID = "8795831946",
 	Duration = 180
 })
 mewing10.ReplyNofitication({
-	Title = "『SeliWare』",
+	Title = "Ǥ҉̷҉̵҉̸҉̷҉̵҉̸҉̡҉̡҉̼҉̱҉͎҉͎҉̞҉̼҉̱҉͎҉͎҉̞҉ͤ҉ͬ҉̅҉ͤ҉ͬ『SeliWare』",
 	Description = "This Hub The Best",
 	ImagesID = "http://www.roblox.com/asset/?id=124591979096235",
 	SoundID = "8795831946",
@@ -21,8 +21,8 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 local Notify = Notification.Notify;
 if SupportedGame == true then
 	Notify({
-		Description = "";
-		Title = "";
+		Description = "This Game Is Supported, Have Fun";
+		Title = "Seliware";
 		Duration = 5;
 
 	});
@@ -46,8 +46,8 @@ local plrcount = #game.Players:GetPlayers()
 local executorName = identifyexecutor() or "Unknown"
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/TwiRwal/TwiWare/main/uilib.lua"))()
 local Window = Library.CreateLib("Ǥ҉̷҉̵҉̸҉̷҉̵҉̸҉̡҉̡҉̼҉̱҉͎҉͎҉̞҉̼҉̱҉͎҉͎҉̞҉ͤ҉ͬ҉̅҉ͤ҉ͬ                                                                                   『SeliWare Hub』                                              ★★★", "DarkTheme")
-local Tab = Window:NewTab("『Home』")
-local Section = Tab:NewSection("--> Home Information <--")
+local Tab = Window:NewTab("『』Home Info")
+local Section = Tab:NewSection("--> Home Info Information <--")
 Section:NewButton("Hello, Welcome "..game.Players.LocalPlayer.Name.." !", "Welcome Info", function()
 end)
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Home !", "Welcome Info", function()
@@ -66,7 +66,7 @@ Section:NewButton("Devnote: For Requesting SWH !", "Welcome Info", function()
 end)
 Section:NewButton("Device: Mobile/Pc !", "Welcome Info", function()
 end)
-Section:NewButton("Version: ...", "Welcome Info", function()
+Section:NewButton("Version: Finished", "Welcome Info", function()
 end)
 local Section = Tab:NewSection("--> Update Logs Info <--")
 Section:NewButton("- Auto Updated Every Single One ✓", "ButtonIfo", function()
@@ -104,8 +104,8 @@ Section:NewButton("CharacterAppearanceId: "..game.Players.LocalPlayer.CharacterA
 end)
 local Section = Tab:NewSection("--> End <--")
 
-local Tab = Window:NewTab("『Main』")
-local Section = Tab:NewSection("--> Main Information <--")
+local Tab = Window:NewTab("『』Main Menu")
+local Section = Tab:NewSection("--> Main Menu Information <--")
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Local Player !", "Welcome Info", function()
 end)
 local Section = Tab:NewSection("Local Player")
@@ -144,7 +144,7 @@ Section:NewButton("JumpPower Reset", "ButtonIfo", function()
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 16
 end)
 local Section = Tab:NewSection("Gravity")
-Section:NewSlider("Gravity", "Adjust The Player Gravity", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+Section:NewSlider("Gravity Slider", "Adjust The Player Gravity", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
 game.Workspace.Gravity = s
 end)
 Section:NewTextBox("Gravity Set", "TextboxInfo", function(txt)
@@ -152,9 +152,9 @@ game.Workspace.Gravity = txt
 end)
 Section:NewToggle("Gravity", "ToggleInfo", function(state)
     if state then
-        worksapce.Gravity = 0
-    else
         worksapce.Gravity = 196.2
+    else
+        worksapce.Gravity = 0
     end
 end)
 Section:NewButton("Gravity Reset", "ButtonIfo", function()
@@ -178,7 +178,7 @@ Section:NewButton("Reset HipHeight", "ButtonIfo", function()
 game.Players.LocalPlayer.Character.Humanoid.HipHeight = 2
 end)
 local Section = Tab:NewSection("Fov")
-Section:NewSlider("Fov", "Adjust The Player FOV", 500, 80, function(s) -- 500 (MaxValue) | 0 (MinValue)
+Section:NewSlider("Fov Slider", "Adjust The Player FOV", 110, 80, function(s) -- 500 (MaxValue) | 0 (MinValue)
 game.Workspace.Camera.FieldOfView = s
 end)
 Section:NewTextBox("Fov Set", "TextboxInfo", function(txt)
@@ -186,7 +186,7 @@ game.Workspace.Camera.FieldOfView = txt
 end)
 Section:NewToggle("Fov", "ToggleInfo", function(state)
     if state then
-        game.Workspace.Camera.FieldOfView = 120
+        game.Workspace.Camera.FieldOfView = 110
     else
         game.Workspace.Camera.FieldOfView = 80
     end
@@ -194,13 +194,14 @@ end)
 Section:NewButton("Fov Reset", "ButtonIfo", function()
 game.Workspace.Camera.FieldOfView = 80
 end)
-local Section = Tab:NewSection("Visual")
+local Section = Tab:NewSection("Reset Character")
 Section:NewButton("Reset Character", "Reser ur character", function()
 game.Players.LocalPlayer.Character.Head:Destroy()
 end)
 Section:NewButton("Respawn Character", "ButtonIfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/respawn/main/main"))()
 end)
+local Section = Tab:NewSection("Visual")
 Section:NewButton("FullBright", "Maximum Brightness", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/cWtYaN28'))()
 end)
@@ -221,54 +222,79 @@ Section:NewToggle("Infinite Jump", "Basically Fly", function(state)
         loadstring(game:HttpGet('https://pastebin.com/raw/ZHMtrKfG'))()
     end
 end)
+Section:NewToggle("Noclip", "", function(state)
+    if state then
+        for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+            if v:IsA("BasePart") then
+                v.CanCollide = false
+            end
+        end
+    else
+        for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+            if v:IsA("BasePart") then
+                v.CanCollide = true
+            end
+        end
+    end
+end)
 players = {}
  
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
    table.insert(players,v.Name)
 end
-
 Section:NewDropdown("Select Player", " ", players, function(abc)
 Select = abc
-end)
-Section:NewButton("Refresh", " ", function()
-    table.clear(players)
-for i,v in pairs(game:GetService("Players"):GetChildren()) do
-   table.insert(players,v.Name)
-end
 end)
 Section:NewButton("Teleport", " ", function()
  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Select].Character.HumanoidRootPart.CFrame
 end)
-local Section = Tab:NewSection("Day - Night")
-Section:NewSlider("Day Slider", "SliderInfo", 2, 6, function(s)
+local oldList = {"Click The Refresh Button To See The Players"}
+local dropdown = Section:NewDropdown("View Player","", oldList, function(r)
+if r == oldList[1] then
+        Notification.new("info", "Information", "Click The Refresh Button To Start Using This", true, 5)
+    elseif game.Players:FindFirstChild(tostring(r)).Character then
+         workspace.CurrentCamera.CameraSubject = game.Players:FindFirstChild(tostring(r)).Character.Humanoid
+    else
+        Notification.new("warning", "Warning", "You Can't Actually Watch This Player, Try To Refresh", true, 5)
+    end
+end)
+local Section = Tab:NewSection("Day")
+Section:NewSlider("Day Slider", "SliderInfo", 2, 9, function(s)
 game.Lighting.TimeOfDay = s
 end)
 Section:NewTextBox("Day Set", "TextboxInfo", function(txt)
 game.Lighting.TimeOfDay = txt
 end)
-Section:NewToggle("Day", "Basically Fly", function(state)
+Section:NewToggle("Day", "?", function(state)
     if state then
-        game.Lighting.TimeOfDay = 2
+        game.Lighting.TimeOfDay = 9
     else
-        game.Lighting.TimeOfDay = 6
+        game.Lighting.TimeOfDay = 2
     end
 end)
-Section:NewSlider("Night Slider", "SliderInfo", 6, 2, function(s)
+Section:NewButton("Day Reset", "ButtonIfo", function()
+game.Lighting.TimeOfDay = 9
+end)
+local Section = Tab:NewSection("Night")
+Section:NewSlider("Night Slider", "SliderInfo", 9, 2, function(s)
 game.Lighting.TimeOfDay = s
 end)
 Section:NewTextBox("Night Set", "TextboxInfo", function(txt)
-game.Lighting.TimeOfDay = s
+game.Lighting.TimeOfDay = txt
 end)
 Section:NewToggle("Night", "Basically Fly", function(state)
     if state then
-        game.Lighting.TimeOfDay = 6
-    else
         game.Lighting.TimeOfDay = 2
+    else
+        game.Lighting.TimeOfDay = 9
     end
+end)
+Section:NewButton("Night Reset", "ButtonIfo", function()
+game.Lighting.TimeOfDay = 2
 end)
 local Section = Tab:NewSection("--> End <--")
 
-local Tab = Window:NewTab("『Script』")
+local Tab = Window:NewTab("『』Scripts")
 local Section = Tab:NewSection("--> Script Information <--")
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Script !", "Welcome Info", function()
 end)
@@ -372,11 +398,11 @@ end)
 Section:NewButton("Infinite Jump", "lets you jump forever", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/KpT16qBg'))()
 end)
+Section:NewButton("Walkspeed And Jumppower Gui", "ButtonIfo", function()
+loadstring(game:httpGet("https://rawscripts.net/raw/Universal-Script-Simple-Gui-20756"))()
+end)
 Section:NewButton("UpDown Gui", "jumps to the postition or number you type", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/UpDown'))()
-end)
-Section:NewButton("Era Hub", "Loads a gui with some features", function()
-loadstring(game:HttpGet('https://pastebin.com/raw/zRWQnNjS'))()
 end)
 Section:NewButton("Auto Rap Battle Gui", "loads a gui for the game", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/3dh0d3ya'))()
@@ -941,14 +967,71 @@ game:GetService("UserInputService").InputBegan:Connect(function(key)
  end
 end)
 end)
+Section:NewButton("Auto Fling Player","Description",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Auto%20Fling%20Player'))()
+end)
+Section:NewButton("Portal","Description",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Portal'))()
+end)
+Section:NewButton("Modifier Gui","Description",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Modifier%20Gui'))()
+end)
+Section:NewButton("Void","Description",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Void'))()
+end)
 Section:NewButton("Hitbox V2", "Hitbox v2", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/GJXmG044"))()
 end)
 Section:NewButton("Tween Teleport", "Tween teleport", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_gtQG8WW70awuM1u2O6I8Z3j007xzGnfC0vw6D6Tzj226R20KPLyKZR8MbK5V57mu.lua.txt'),true))()
 end)
+Section:NewButton("Back Flip","Description",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/yjxXnxbS'))()
+end)
+Section:NewButton("Tp To Plr","Description",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/GMd65YS9"))()
+end)
+Section:NewButton("Rewind v2","Description",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/cgWLwdN9", true))()
+end)
+Section:NewButton("Custom Sit","Description",function()
+loadstring(game:HttpGet(('https://pastefy.app/XKxQtK2K/raw'),true))()
+end)
+Section:NewButton("Fake Tool","Description",function()
+loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()
+end)
+Section:NewButton("Tp Place","Description",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Tp%20Place%20GUI'),true))()
+end)
+Section:NewButton("Walkspeed Control","Description",function()
+loadstring(game:HttpGet"https://pastebin.com/raw/n0cJhW7M")()
+end)
+Section:NewButton("Body Follow Camera","Description",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Body%20Follow%20Camera'))()
+end)
+Section:NewButton("Cctv Camera","Description",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/CCTV%20Camera'))()
+end)
 Section:NewButton("Can You See Me?", "Can you see me?", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt"))()
+end)
+Section:NewButton("Highlight By Me","Description",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/W8S8zQns"))()
+end)
+Section:NewButton("Real Time Clock By Me","Description",function()
+loadstring(game:HttpGet("https://pastefy.app/fTVX5OcK/raw"))()
+end)
+Section:NewButton("Show Ping By Me","Description",function()
+loadstring(game:HttpGet("https://pastefy.app/2SvWsUoj/raw"))()
+end)
+Section:NewButton("Player Join Notification By Me","Description",function()
+loadstring(game:HttpGet("https://pastefy.app/P6DOYa0w/raw"))()
+end)
+Section:NewButton("Player Leave Notification By Me","Description",function()
+loadstring(game:HttpGet("https://pastefy.app/xhMxcb50/raw"))()
+end)
+Section:NewButton("Player Death Notification","Description",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Player%20Death%20Notification'))()
 end)
 Section:NewButton("Flash Back", "Flash back", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/cgWLwdN9", true))()
@@ -970,8 +1053,8 @@ loadstring(game:HttpGet("https://pastebin.com/raw/fJbWYetZ"))()
 end)
 local Section = Tab:NewSection("--> End <--")
 
-local Tab = Window:NewTab("『Hub』")
-local Section = Tab:NewSection("--> Hub Information <--")
+local Tab = Window:NewTab("『』Hubs")
+local Section = Tab:NewSection("--> Hubs Information <--")
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Hub !", "Welcome Info", function()
 end)
 local Section = Tab:NewSection("Random Hub Universal Time")
@@ -1237,7 +1320,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AnAvaragelilmemer/Pis
 end)
 local Section = Tab:NewSection("--> End <--")
 
-local Tab = Window:NewTab("『Fe』")
+local Tab = Window:NewTab("『』Fe")
 local Section = Tab:NewSection("--> Fe Information <--")
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Fe !", "Welcome Info", function()
 end)
@@ -1694,8 +1777,8 @@ Sound:Play()
 end)
 local Section = Tab:NewSection("--> End <--")
 
-local Tab = Window:NewTab("『Admin』")
-local Section = Tab:NewSection("--> Admin Information <--")
+local Tab = Window:NewTab("『』Admin Commands")
+local Section = Tab:NewSection("--> Admin Commands Information <--")
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Admin !", "Welcome Info", function()
 end)
 local Section = Tab:NewSection("All Admin Others")
@@ -1807,7 +1890,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/ma
 end)
 local Section = Tab:NewSection("--> End <--")
 
-local Tab = Window:NewTab("『Games』")
+local Tab = Window:NewTab("『』Games")
 local Section = Tab:NewSection("--> Games Information <--")
 Section:NewButton("Game Name: "..GameName, "Game Name Info", function()
 end)
@@ -2878,7 +2961,7 @@ loadstring(game: HttpGet('https://raw.githubusercontent.com/GamingScripter/Darkr
 end)
 local Section = Tab:NewSection("--> End <--")
 
-local Tab = Window:NewTab("『Executor』")
+local Tab = Window:NewTab("『』Executor")
 local Section = Tab:NewSection("--> Executor Information <--")
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Executor !", "Welcome Info", function()
 end)
@@ -2928,9 +3011,6 @@ end)
 Section:NewButton("XScarlet Wave Executor", "ButtonIfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scarlet1837/a/main/executor-scarlet"))()
 end)
-Section:NewButton("Simple Executor", "ButtonIfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/tEn75ktN"))()
-end)
 Section:NewButton("Simple Executor Gui Made By Govemeban800", "ButtonIfo", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/taWbKhx0"))()
 end)
@@ -2943,11 +3023,35 @@ end)
 Section:NewButton("Nexus Executor", "ButtonIfo", function()
 loadstring(game:HttpGet("https://pastebin.pl/view/c2afdc6b"))()
 end)
+Section:NewButton("Steam V1.0 Executor", "ButtonIfo", function()
+loadstring(game:httpGet("https://pastebin.com/raw/nxcaqZsT"))()
+end)
 Section:NewButton("SecretServicePanel + Admin + Executor", "ButtonIfo", function()
 loadstring(game:HttpGet("Https://raw.githubusercontent.com/MagnumIceCream/SecretServicePanel/6fefdf531e86404fb41b7812e7e84b69c7ea728f/ShakesSSP"))()
 end)
 Section:NewButton("ExeCurious V1.1 Executor", "ButtonIfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/pedroluckygod/Yes/main/exec_test"))()
+end)
+Section:NewButton("Lunar Executor", "ButtonIfo", function()
+loadstring(game:httpGet("https://rawscripts.net/raw/Universal-Script-Lunar-Fan-Remake-13128"))()
+end)
+Section:NewButton("SappleX Exploit", "ButtonIfo", function()
+loadstring(game:httpGet("https://rawscripts.net/raw/Universal-Script-SappleX-BETTER-VERISON-12424"))()
+end)
+Section:NewButton("Made By MaxINFINITE530 Inspired By Gamerlel1224 Executor", "ButtonIfo", function()
+loadstring(game:httpGet("https://pastebin.com/raw/31f5JVhA"))()
+end)
+Section:NewButton("Drag Me ! Executor", "ButtonIfo", function()
+loadstring(game:httpGet("https://pastebin.com/raw/jBhjnxiP"))()
+end)
+Section:NewButton("Krypton Executor", "ButtonIfo", function()
+loadstring(game:httpGet("https://pastebin.com/raw/9nvwUAGr"))()
+end)
+Section:NewButton("WeAreSafe Executor", "ButtonIfo", function()
+loadstring(game:httpGet("https://pastebin.com/raw/UYxiS2hf"))()
+end)
+Section:NewButton("Script Executor", "ButtonIfo", function()
+loadstring(game:httpGet("https://pastebin.com/raw/CFAfsC0b"))()
 end)
 Section:NewButton("<\> LittExec Executor", "ButtonIfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Littmsn/LittExec/main/LittExec%20Internal'))()
@@ -2955,8 +3059,8 @@ end)
 Section:NewButton("Sexy Hamoot (Premium) Executor", "ButtonIfo", function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Hamoot-script-9408"))()
 end)
-Section:NewButton("Rc6 Executor", "ButtonIfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/yC17LyT6"))()
+Section:NewButton("SimpleHaxx Version V2.0 Executor", "ButtonIfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/QAEWnVPW"))()
 end)
 Section:NewButton("Rc7 Executor", "ButtonIfo", function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Rc7-9396"))()
@@ -2973,7 +3077,7 @@ end)
 Section:NewButton("Crazy Executor V4.8", "ButtonIfo", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/CloudHub111/Crazy-Executor-V4.8.9/main/Obfuscated%20Free')))()
 end)
-Section:NewButton("Loadstring Executor", "ButtonIfo", function()
+Section:NewButton("SynapseG Free Version V3.0 Executor", "ButtonIfo", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/niBtt9Sq"))()
 end)
 Section:NewButton("Lava's Executor", "ButtonIfo", function()
@@ -2989,7 +3093,7 @@ Section:NewButton("Random 3 Executor", "ButtonIfo", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/1NaAEMHk"))()
 end)
 Section:NewButton("Incognito Executor [Pc]", "ButtonIfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/HLKRWSbG"))()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Incognito-Internal-15436"))()
 end)
 Section:NewButton("XSolar Executor", "ButtonIfo", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/ZsFSrFM5"))()
@@ -3021,7 +3125,7 @@ end)
 Section:NewButton("MoonUi V10 Hub + Executor", "ButtonIfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/MoonUI-v10-/main/MoonUI%20v10'))()
 end)
-Section:NewButton("Psy Hub + Ede", "ButtonIfo", function()
+Section:NewButton("Psy Hub + Executor", "ButtonIfo", function()
 loadstring(game:GetObjects("rbxassetid://3014051754")[1].Source)()
 end)
 Section:NewButton("Alysse REVAMPED Executor", "ButtonIfo", function()
@@ -3158,6 +3262,9 @@ end)
 Section:NewButton("Project Stigma Executor", "ButtonIfo", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/GtghHMkA'))()
 end)
+Section:NewButton("Krampus SS Executor", "ButtonIfo", function()
+loadstring(game:httpGet("https://rawscripts.net/raw/Universal-Script-Krampus-Serverside-13376"))()
+end)
 Section:NewButton("Backdoor Executor", "ButtonIfo", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 end)
@@ -3219,19 +3326,25 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/ScriptBlox-ingame-UI_105"))(
 end)
 local Section = Tab:NewSection("--> End <--")
 
-local Tab = Window:NewTab("『Credit - Creator』")
-local Section = Tab:NewSection("--> Credit - Creator Information <--")
+local Tab = Window:NewTab("『』Developer")
+local Section = Tab:NewSection("--> Developer Information <--")
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Credit - Creator !", "Welcome Info", function()
 end)
-Section:NewButton("Credit: RAGASGAMING12/StarFox !", "Credit Info", function()
+Section:NewButton("Owner: RAGASGAMING12/StarFox !", "Credit Info", function()
 end)
-Section:NewButton("Creator: Ahmad Syaril !", "Creator Info", function()
+Section:NewButton("Head Developer: Ahmad Syaril !", "Creator Info", function()
+end)
+Section:NewButton("Head Developer: Virman Maulana !", "Creator Info", function()
+end)
+Section:NewButton("Head Developer: Nasril Irham !", "Creator Info", function()
+end)
+Section:NewButton("Head Developer: Avril Zazkia !", "Creator Info", function()
 end)
 Section:NewButton("More SWH And Update SWH Coming Soon !", "More SH Update Info", function()
 end)
 local Section = Tab:NewSection("--> End <--")
 
-local Tab = Window:NewTab("『Setting』")
+local Tab = Window:NewTab("『』Settings")
 local Section = Tab:NewSection("--> Setting Information <--")
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Setting !", "Welcome Info", function()
 end)
@@ -3243,11 +3356,49 @@ local Section = Tab:NewSection("Server Games")
 Section:NewButton("Rejoin", "ButtonIfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/rejoin/main/main"))()
 end)
+Section:NewButton("Server Hopper Gui", "ButtonIfo", function()
+loadstring(game:httpGet("https://rawscripts.net/raw/Universal-Script-Server-Hopper-21123"))()
+end)
+Section:NewButton("Small Server", "ButtonInfo", function()
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+repeat task.wait() until game.Players.LocalPlayer.Character ~= nil and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+if game.Players.LocalPlayer.Character:FindFirstChild("entered") == nil then
+    repeat task.wait()
+        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Lobby.Teleport1, 0)
+        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Lobby.Teleport1, 1)
+    until game.Players.LocalPlayer.Character:FindFirstChild("entered")
+end
+for i, v in pairs(workspace.CandyCorns:GetChildren()) do
+                if v:FindFirstChildWhichIsA("TouchTransmitter") then
+                    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v, 0)
+        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v, 1)
+                end
+            end
+local serverList = {}
+for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
+	if v.playing and type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
+		serverList[#serverList + 1] = v.id
+	end
+end
+if #serverList > 0 then
+	game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, serverList[math.random(1, #serverList)])
+else
+    error("No servers found")
+end
+end)
 Section:NewButton("Exit Game", "Exits the game", function()
 game:Shutdown()
 end)
 Section:NewButton("Disconnect From Server", "Kicks you from the game", function()
-game:GetService("Players").LocalPlayer:Kick("Bye")
+game:GetService("Players").LocalPlayer:Kick("Disconnect From Server")
+end)
+Section:NewButton("Console Open", "ButtonIfo", function()
+game.StarterGui:SetCore("DevConsoleVisible", true)
+end)
+Section:NewButton("Console Close", "ButtonIfo", function()
+game.StarterGui:SetCore("DevConsoleVisible", false)
 end)
 Section:NewTextBox("Chat", "TextboxInfo", function(txt)
 game.StarterGui:SetCore("ChatMakeSystemMessage",  { Text = txt, Color = Color3.fromRGB( 255,255,255 ), Font = Enum.Font.Arial } )
