@@ -1,0 +1,95 @@
+local a=Instance.new("ScreenGui")
+a.Name="KryptonLoadingScreen"
+a.Parent=game.Players.LocalPlayer:WaitForChild("PlayerGui")
+a.IgnoreGuiInset=true;
+
+local b=Instance.new("Frame")
+b.Name="Background"
+b.Size=UDim2.new(1,0,1,0)
+b.Position=UDim2.new(0,0,0,0)
+b.BackgroundColor3=Color3.fromRGB(27,27,27)
+b.Parent=a;
+
+local c=Instance.new("TextLabel")
+c.Name="TitleLabel"
+c.Size=UDim2.new(0.8,0,0.05,0)
+c.Position=UDim2.new(0.5,0,0.1,0)
+c.AnchorPoint=Vector2.new(0.5,0.5)
+c.BackgroundTransparency=1;
+c.TextColor3=Color3.fromRGB(255,255,255)
+c.Text="Hub"
+c.TextScaled=true;
+c.Font=Enum.Font.SourceSansBold;
+c.Parent=b;
+
+local d=Instance.new("TextLabel")
+d.Name="LoadingLabel"
+d.Size=UDim2.new(0.2,0,0.05,0)
+d.Position=UDim2.new(0.5,0,0.55,0)
+d.AnchorPoint=Vector2.new(0.5,0.5)
+d.BackgroundTransparency=1;
+d.TextColor3=Color3.fromRGB(255,255,255)
+d.Text="Loading..."
+d.TextScaled=true;
+d.Font=Enum.Font.SourceSans;
+d.Parent=b;
+
+local e=Instance.new("Frame")
+e.Name="LoadingBarBackground"
+e.Size=UDim2.new(0.6,0,0.02,0)
+e.Position=UDim2.new(0.5,0,0.65,0)
+e.AnchorPoint=Vector2.new(0.5,0.5)
+e.BackgroundColor3=Color3.fromRGB(100,0,0)
+e.BorderSizePixel=0;
+e.Parent=b;
+e.ClipsDescendants=true;
+
+local f=Instance.new("Frame")
+f.Name="LoadingBar"
+f.Size=UDim2.new(0,0,1,0)
+f.BackgroundColor3=Color3.fromRGB(255,87,51)
+f.BorderSizePixel=0;
+f.Parent=e;
+
+local g=Instance.new("UICorner")
+g.CornerRadius=UDim.new(0,5)
+g.Parent=e;
+
+local h=Instance.new("UICorner")
+h.CornerRadius=UDim.new(0,5)
+h.Parent=f;
+
+local i=Instance.new("TextLabel")
+i.Name="TipLabel"
+i.Size=UDim2.new(0.6,0,0.05,0)
+i.Position=UDim2.new(0.5,0,0.75,0)
+i.AnchorPoint=Vector2.new(0.5,0.5)
+i.BackgroundTransparency=1;
+i.TextColor3=Color3.fromRGB(255,0,0)
+i.TextScaled=true;
+i.Font=Enum.Font.SourceSansItalic;
+i.Parent=b;
+
+local j={"Tip: Always stay alert.","Tip: Remember to save your progress.","Tip: Explore every area for hidden items.","Tip: Keep an eye on your health bar.","Tip: Communicate with people.","Tip: Upgrade your equipment regularly.","Tip: Uh oh big error."}local function k()local l=j[math.random(1,#j)]i.Text=l end;local function m()b:Destroy()
+local n=Instance.new("Frame")
+n.Name="OutroBackground"
+n.Size=UDim2.new(1,0,1,0)
+n.Position=UDim2.new(0,0,0,0)
+n.BackgroundColor3=Color3.fromRGB(27,27,27)
+n.Parent=a;
+
+local o=Instance.new("TextLabel")
+o.Name="OutroLabel"
+o.Size=UDim2.new(0.8,0,0.1,0)
+o.Position=UDim2.new(0.5,0,0.5,0)
+o.AnchorPoint=Vector2.new(0.5,0.5)
+o.BackgroundTransparency=1;
+o.TextColor3=Color3.fromRGB(255,255,255)
+o.Text="Loading Complete! Welcome To Hub"
+o.TextScaled=true;
+o.Font=Enum.Font.SourceSansBold;
+o.Parent=n;
+
+local p=Instance.new("UICorner")
+p.CornerRadius=UDim.new(0,5)
+p.Parent=n;n.BackgroundTransparency=1;local q=game:GetService("TweenService")local r=q:Create(n,TweenInfo.new(1,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),{BackgroundTransparency=0})r:Play()wait(3)local s=q:Create(n,TweenInfo.new(1,Enum.EasingStyle.Quad,Enum.EasingDirection.In),{BackgroundTransparency=1})s:Play()s.Completed:Connect(function()a:Destroy()end)end;local function t()local q=game:GetService("TweenService")local u=TweenInfo.new(30,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut)local v={}v.Size=UDim2.new(1,0,1,0)local w=q:Create(f,u,v)w:Play()w.Completed:Connect(function()m()end)end;k()t()
