@@ -1,0 +1,16 @@
+-- Load TiepUI
+local TiepUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/DexCodeSX/SensationX-Scripting/refs/heads/Blox/SystemNotfiUI/TiepUI.lua"))()
+
+-- Create notifications
+TiepUI.notify("Welcome", "This is the enhanced TiepUI notification system!", 5, "info")
+wait(1)
+TiepUI.notify("Success", "Your operation was completed successfully.", 5, "success")
+wait(1)
+TiepUI.notify("Warning", "Please be cautious when using this feature.", 5, "warning")
+wait(1)
+TiepUI.notify("Error", "An error occurred while processing your request.", 5, "error")
+
+-- Use debug functions
+TiepUI.debugEnvironment()
+wait(1)
+TiepUI.checkExploitFeatures()
