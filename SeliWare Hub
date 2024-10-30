@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/notjohnnylol/seliwareload/refs/heads/main/putinautoexec"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/SeliWare%20Logo%20Screen"))()
 local mewing10 = loadstring(game:HttpGet('https://raw.githubusercontent.com/Breadido/Mewing10/main/mewing10_source.lua'))()
 mewing10.NormalNotification({
 	Title = "Ǥ҉̷҉̵҉̸҉̷҉̵҉̸҉̡҉̡҉̼҉̱҉͎҉͎҉̞҉̼҉̱҉͎҉͎҉̞҉ͤ҉ͬ҉̅҉ͤ҉ͬ『SeliWare』",
@@ -44,10 +44,26 @@ local plrchr = plr.Character
 local plrage = plr.AccountAge
 local plrcount = #game.Players:GetPlayers()
 local executorName = identifyexecutor() or "Unknown"
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/TwiRwal/TwiWare/main/uilib.lua"))()
-local Window = Library.CreateLib("Ǥ҉̷҉̵҉̸҉̷҉̵҉̸҉̡҉̡҉̼҉̱҉͎҉͎҉̞҉̼҉̱҉͎҉͎҉̞҉ͤ҉ͬ҉̅҉ͤ҉ͬ                                                                                   『SeliWare Hub』                                              ★★★", "DarkTheme")
-local Tab = Window:NewTab("『』Home Info")
-local Section = Tab:NewSection("--> Home Info Information <--")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/Kavo%20Ui%20Library"))()
+local colors = {
+    SchemeColor = Color3.fromRGB(85, 80, 250),
+        Background = Color3.fromRGB(26, 32, 58),
+        Header = Color3.fromRGB(38, 45, 71),
+        TextColor = Color3.fromRGB(255, 255, 255),
+        ElementColor = Color3.fromRGB(38, 45, 71)
+}
+
+local Window = Library.CreateLib("Ǥ҉̷҉̵҉̸҉̷҉̵҉̸҉̡҉̡҉̼҉̱҉͎҉͎҉̞҉̼҉̱҉͎҉͎҉̞҉ͤ҉ͬ҉̅҉ͤ҉ͬ                                                                                   『SeliWare Hub』                                                      ★★★", colors)
+local themes = {
+    "SchemeColor",
+    "Background",
+    "Header",
+    "TextColor",
+    "ElementColor"
+}
+
+local Tab = Window:NewTab("『』Home")
+local Section = Tab:NewSection("--> Home Information <--")
 Section:NewButton("Hello, Welcome "..game.Players.LocalPlayer.Name.." !", "Welcome Info", function()
 end)
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Home !", "Welcome Info", function()
@@ -104,7 +120,7 @@ Section:NewButton("CharacterAppearanceId: "..game.Players.LocalPlayer.CharacterA
 end)
 local Section = Tab:NewSection("--> End <--")
 
-local Tab = Window:NewTab("『』Main Menu")
+local Tab = Window:NewTab("『』Main")
 local Section = Tab:NewSection("--> Main Menu Information <--")
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Local Player !", "Welcome Info", function()
 end)
@@ -3344,7 +3360,7 @@ Section:NewButton("More SWH And Update SWH Coming Soon !", "More SH Update Info"
 end)
 local Section = Tab:NewSection("--> End <--")
 
-local Tab = Window:NewTab("『』Settings")
+local Tab = Window:NewTab("『』Setting")
 local Section = Tab:NewSection("--> Setting Information <--")
 Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Setting !", "Welcome Info", function()
 end)
@@ -3403,6 +3419,13 @@ end)
 Section:NewTextBox("Chat", "TextboxInfo", function(txt)
 game.StarterGui:SetCore("ChatMakeSystemMessage",  { Text = txt, Color = Color3.fromRGB( 255,255,255 ), Font = Enum.Font.Arial } )
 end)
+local Section = Tab:NewSection("Gui Color")
+local Section = Tab:NewSection("ColorPickers UI Color Changer")
+for _, theme in ipairs(themes) do
+Section:NewColorPicker(theme, "Change your " .. theme, colors[theme], function(color)
+        colors[theme] = color
+    end)
+end
 local Section = Tab:NewSection("--> End <--")
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -3413,7 +3436,7 @@ ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
 ImageButton.Parent = ScreenGui
-ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BackgroundColor3 = Color3.fromRGB(38, 45, 71)
 ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 00)
 ImageButton.Size = UDim2.new(0, 50, 0, 50)
