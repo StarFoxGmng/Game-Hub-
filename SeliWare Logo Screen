@@ -1,0 +1,49 @@
+local tweensvc = game:GetService("TweenService")
+local players = game:GetService("Players")
+local plr = players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+local img = Instance.new("ImageLabel")
+local snd = Instance.new("Sound")
+gui.Parent = plr:WaitForChild("PlayerGui")
+gui.Name = "imgfade"
+gui.DisplayOrder = 10 ^ 6
+gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+img.Parent = gui
+img.Name = "fadingimg"
+img.Size = UDim2.new(0, 563, 0, 124)
+img.Position = UDim2.new(0.5, -563 / 2, 0, -124)
+img.Image = "rbxassetid://124591979096235"
+img.BackgroundTransparency = 1
+img.ImageTransparency = 1
+img.ScaleType = Enum.ScaleType.Stretch
+img.ZIndex = 10 ^ 6
+snd.Parent = gui
+snd.SoundId = "rbxassetid://8795831946"
+snd.Volume = 1
+snd.Looped = false
+snd:Play()
+local movetime = 1
+local fadetime = 1
+local movetweeninfo = TweenInfo.new(movetime, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out)
+local fadetweeninfo = TweenInfo.new(fadetime, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+local movegoal = {Position = UDim2.new(0.5, -563 / 2, 0.5, -124 / 2)}
+local movetween = tweensvc:Create(img, movetweeninfo, movegoal)
+local fadeingoal = {ImageTransparency = 0}
+local fadeoutgoal = {ImageTransparency = 1}
+local fadeintween = tweensvc:Create(img, fadetweeninfo, fadeingoal)
+local fadeouttween = tweensvc:Create(img, fadetweeninfo, fadeoutgoal)
+local function fiam()
+    fadeintween:Play()
+    movetween:Play()
+    movetween.Completed:Connect(function()
+        wait(1)
+        fadeouttween:Play()
+        fadeouttween.Completed:Connect(function()
+            gui:Destroy()
+        end)
+
+    end)
+
+end
+
+fiam()
