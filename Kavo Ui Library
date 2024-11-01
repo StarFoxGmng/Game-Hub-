@@ -278,7 +278,7 @@ function Kavo.CreateLib(kavName, themeList)
     title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     title.BackgroundTransparency = 1.000
     title.BorderSizePixel = 0
-    title.Position = UDim2.new(0.0171428565, 0, 0.344827592, 0)
+    title.Position = UDim2.new(0.949999988, 0, 0.137999997, 0)
     title.Size = UDim2.new(0, 204, 0, 8)
     title.Font = Enum.Font.SourceSansBold
     title.RichText = true
@@ -290,10 +290,10 @@ function Kavo.CreateLib(kavName, themeList)
     close.Name = "close"
     close.Parent = MainHeader
     close.BackgroundTransparency = 1.000
-    close.Position = UDim2.new(0.949999988, 0, 0.137999997, 0)
+    close.Position = UDim2.new(0.0171428565, 0, 0.344827592, 0)
     close.Size = UDim2.new(0, 21, 0, 21)
     close.ZIndex = 2
-    close.Image = "rbxassetid://"
+    close.Image = "rbxassetid://124591979096235"
     close.ImageRectOffset = Vector2.new(284, 4)
     close.ImageRectSize = Vector2.new(24, 24)
     close.MouseButton1Click:Connect(function()
