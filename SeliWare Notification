@@ -230,7 +230,7 @@ function mewing10.ReplyNofitication(conpigs) -- or you can call it TextboxNofiti
 	Hide_2.Image = "rbxassetid://7733717755"
 
 	TextBox.Parent = TextboxNofitication
-	TextBox.BackgroundColor3 = Color3.fromRGB(50,50,50)
+	TextBox.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
 	TextBox.BackgroundTransparency = 0
 	TextBox.BorderColor3 = Color3.fromRGB(38, 45, 71)
 	TextBox.BorderSizePixel = 1
