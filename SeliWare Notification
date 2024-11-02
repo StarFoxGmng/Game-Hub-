@@ -48,7 +48,7 @@ function mewing10.NormalNotification(conpigs)
 	
 	NormalNofitication.Name = "NormalNofitication"
 	NormalNofitication.Parent = Frame
-	NormalNofitication.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+	NormalNofitication.BackgroundColor3 = Color3.fromRGB(85, 80, 250)
 	NormalNofitication.BackgroundTransparency = 0.200
 	NormalNofitication.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	NormalNofitication.BorderSizePixel = 0
