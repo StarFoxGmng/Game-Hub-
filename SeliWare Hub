@@ -217,13 +217,15 @@ end)
 Section:NewButton("Respawn Character", "ButtonIfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/respawn/main/main"))()
 end)
-local Section = Tab:NewSection("Visual")
+local Section = Tab:NewSection("Fullbright")
 Section:NewButton("FullBright", "Maximum Brightness", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/cWtYaN28'))()
 end)
+local Section = Tab:NewSection("Esp")
 Section:NewButton("Esp", "Shows Players Through Walls", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/A3h0RtT2"))()
 end)
+local Section = Tab:NewSection("Infinite Jump")
 Section:NewButton("Infinite Jump", "Well idk what to put here lol", function()
 game:GetService("UserInputService").JumpRequest:connect(function()
 	if InfiniteJumpEnabled then
@@ -238,6 +240,7 @@ Section:NewToggle("Infinite Jump", "Basically Fly", function(state)
         loadstring(game:HttpGet('https://pastebin.com/raw/ZHMtrKfG'))()
     end
 end)
+local Section = Tab:NewSection("Noclip")
 Section:NewToggle("Noclip", "", function(state)
     if state then
         for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
@@ -253,19 +256,26 @@ Section:NewToggle("Noclip", "", function(state)
         end
     end
 end)
+local Section = Tab:NewSection("Teleport Players")
+Section:NewTextBox("Goto Player", "Go to a player.", function(PlayerTeleportName)
+local playerone = game.Players.LocalPlayer.Character
+local playertwo = game.Workspace:FindFirstChild(PlayerTeleportName)
+playerone.HumanoidRootPart.CFrame = playertwo.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
+end)
 players = {}
  
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
    table.insert(players,v.Name)
 end
-Section:NewDropdown("Select Player", " ", players, function(abc)
+Section:NewDropdown("Select Players", " ", players, function(abc)
 Select = abc
 end)
 Section:NewButton("Teleport", " ", function()
  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Select].Character.HumanoidRootPart.CFrame
 end)
+local Section = Tab:NewSection("View Players")
 local oldList = {"Click The Refresh Button To See The Players"}
-local dropdown = Section:NewDropdown("View Player","", oldList, function(r)
+local dropdown = Section:NewDropdown("View Players","", oldList, function(r)
 if r == oldList[1] then
         Notification.new("info", "Information", "Click The Refresh Button To Start Using This", true, 5)
     elseif game.Players:FindFirstChild(tostring(r)).Character then
