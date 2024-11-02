@@ -931,7 +931,7 @@ local GUIData = (function()
 		end
 	end)
 	
-	Mods.Text = "SeliWare" .. _V
+	Mods.Text = "Ǥ҉̷҉̵҉̸҉̷҉̵҉̸҉̡҉̡҉̼҉̱҉͎҉͎҉̞҉̼҉̱҉͎҉͎҉̞҉ͤ҉ͬ҉̅҉ͤ SeliWare" .. _V
 	
 	game.Close:Connect(function()
 		Save()
