@@ -53,7 +53,7 @@ local colors = {
         TextColor = Color3.fromRGB(255, 255, 255),
         ElementColor = Color3.fromRGB(38, 45, 71)
 }
-local Window = Library.CreateLib("★★★", colors)                                                      ★★★", colors)
+local Window = Library.CreateLib("★★★", colors)
 local themes = {
     "SchemeColor",
     "Background",
