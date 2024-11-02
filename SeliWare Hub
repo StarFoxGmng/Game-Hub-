@@ -1,14 +1,14 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/SeliWare%20Logo%20Screen"))()
-local mewing10 = loadstring(game:HttpGet('https://raw.githubusercontent.com/Breadido/Mewing10/main/mewing10_source.lua'))()
+local mewing10 = loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/SeliWare%20Notification"))()
 mewing10.NormalNotification({
-	Title = "Ǥ҉̷҉̵҉̸҉̷҉̵҉̸҉̡҉̡҉̼҉̱҉͎҉͎҉̞҉̼҉̱҉͎҉͎҉̞҉ͤ҉ͬ҉̅҉ͤ҉ͬ『SeliWare』",
+	Title = "SeliWare",
 	Description = "This Hub Open Source",
 	ImagesID = "http://www.roblox.com/asset/?id=124591979096235", 
 	SoundID = "8795831946",
 	Duration = 180
 })
 mewing10.ReplyNofitication({
-	Title = "Ǥ҉̷҉̵҉̸҉̷҉̵҉̸҉̡҉̡҉̼҉̱҉͎҉͎҉̞҉̼҉̱҉͎҉͎҉̞҉ͤ҉ͬ҉̅҉ͤ҉ͬ『SeliWare』",
+	Title = "SeliWare",
 	Description = "This Hub The Best",
 	ImagesID = "http://www.roblox.com/asset/?id=124591979096235",
 	SoundID = "8795831946",
