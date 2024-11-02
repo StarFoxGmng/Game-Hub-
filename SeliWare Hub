@@ -34,6 +34,7 @@ else
 
 	});
 end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/Notification%20Ui%20SeliWare%20Hub"))()
 local GameId = game.PlaceId
 local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 local plrs = game:GetService("Players")
@@ -52,8 +53,7 @@ local colors = {
         TextColor = Color3.fromRGB(255, 255, 255),
         ElementColor = Color3.fromRGB(38, 45, 71)
 }
-
-local Window = Library.CreateLib("Ǥ҉̷҉̵҉̸҉̷҉̵҉̸҉̡҉̡҉̼҉̱҉͎҉͎҉̞҉̼҉̱҉͎҉͎҉̞҉ͤ҉ͬ҉̅҉ͤ҉ͬ                                                                                   『SeliWare Hub』                                                      ★★★", colors)
+local Window = Library.CreateLib("★★★", colors)                                                      ★★★", colors)
 local themes = {
     "SchemeColor",
     "Background",
