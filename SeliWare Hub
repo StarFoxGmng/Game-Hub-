@@ -17,23 +17,6 @@ mewing10.ReplyNofitication({
 		print(a)
 	end,
 })
-local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/NamelessAdmin-NO-BYFRON-GUI/main/notificationtest.txt"))();
-local Notify = Notification.Notify;
-if SupportedGame == true then
-	Notify({
-		Description = "This Game Is Supported, Have Fun";
-		Title = "Seliware";
-		Duration = 5;
-
-	});
-else
-	Notify({
-		Description = "This Game Is Supported, Have Fun";
-		Title = "Seliware";
-		Duration = 5;
-
-	});
-end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/Notification%20Ui%20SeliWare%20Hub"))()
 local GameId = game.PlaceId
 local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
@@ -53,7 +36,7 @@ local colors = {
         TextColor = Color3.fromRGB(255, 255, 255),
         ElementColor = Color3.fromRGB(38, 45, 71)
 }
-local Window = Library.CreateLib("SeliWare", colors)
+local Window = Library.CreateLib("", colors)
 local themes = {
     "SchemeColor",
     "Background",
@@ -1809,7 +1792,7 @@ Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Admin !", "We
 end)
 local Section = Tab:NewSection("All Admin Others")
 Section:NewButton("Infinite Yeild Delta Mobile Admin", "ButtonIfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/kbBJxm8g"))()
+loadstring(game:Httpget("https://pastebin.com/raw/kbBJxm8g"))()
 end)
 Section:NewButton("Infinite Yield Admin", "Admin", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
