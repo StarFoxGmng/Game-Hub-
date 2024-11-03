@@ -1,7 +1,7 @@
 # Game-Hub
 Script Hub 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/SeliWare%20Hub"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/SeliWare%20Hub%20Finished"))()
 
 # Game-Hub
 Hitbox Expander Hub 
