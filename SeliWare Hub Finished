@@ -1,6 +1,6 @@
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
- 
+
 local Frame = Instance.new("Frame")
 Frame.Size = UDim2.new(0, 400, 0, 300)
 Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -10,11 +10,11 @@ Frame.BorderSizePixel = 0
 Frame.Active = true
 Frame.Draggable = true
 Frame.Parent = ScreenGui
- 
+
 local FrameCorner = Instance.new("UICorner")
 FrameCorner.CornerRadius = UDim.new(0, 10)
 FrameCorner.Parent = Frame
- 
+
 local Close = Instance.new("TextButton")
 Close.Size = UDim2.new(0, 40, 0, 40)
 Close.Position = UDim2.new(1, -40, 0, 0)
@@ -31,8 +31,8 @@ local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, 0, 0, 30)
 Title.Position = UDim2.new(0, 0, 0.05, 0)
 Title.Text = "Key System"
-Title.TextSize = 18
-Title.TextColor3 = Color3.fromRGB(86, 76, 251)
+Title.TextSize = 20
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1
 Title.Parent = Frame
  
@@ -40,8 +40,8 @@ local Instructions = Instance.new("TextLabel")
 Instructions.Size = UDim2.new(1, 0, 0, 30)
 Instructions.Position = UDim2.new(0, 0, 0.2, 0)
 Instructions.Text = "Enter Key To Access The Script"
-Instructions.TextSize = 13
-Instructions.TextColor3 = Color3.fromRGB(86, 76, 251)
+Instructions.TextSize = 20
+Instructions.TextColor3 = Color3.fromRGB(255, 255, 255)
 Instructions.BackgroundTransparency = 1
 Instructions.Parent = Frame
  
@@ -64,20 +64,20 @@ GetKey.Size = UDim2.new(0.35, 0, 0.15, 0)
 GetKey.Position = UDim2.new(0.1, 0, 0.7, 0)
 GetKey.BackgroundColor3 = Color3.fromRGB(86, 76, 251)
 GetKey.Text = "Get Key"
-GetKey.TextSize = 18
+GetKey.TextSize = 20
 GetKey.TextColor3 = Color3.fromRGB(200, 200, 200)
 GetKey.Parent = Frame
- 
+
 local GetKeyCorner = Instance.new("UICorner")
 GetKeyCorner.CornerRadius = UDim.new(0, 5)
 GetKeyCorner.Parent = GetKey
- 
+
 local CheckKey = Instance.new("TextButton")
 CheckKey.Size = UDim2.new(0.35, 0, 0.15, 0)
 CheckKey.Position = UDim2.new(0.55, 0, 0.7, 0)
 CheckKey.BackgroundColor3 = Color3.fromRGB(86, 76, 251)
 CheckKey.Text = "Check Key"
-CheckKey.TextSize = 18
+CheckKey.TextSize = 20
 CheckKey.TextColor3 = Color3.fromRGB(200, 200, 200)
 CheckKey.Parent = Frame
  
@@ -86,7 +86,7 @@ CheckKeyCorner.CornerRadius = UDim.new(0, 5)
 CheckKeyCorner.Parent = CheckKey
  
 GetKey.MouseButton1Click:Connect(function()
-   setclipboard("Your Way How To Get The Key")
+   setclipboard("SeliWare")
 end)
  
 local function validateKey(key)
@@ -100,7 +100,6 @@ CheckKey.MouseButton1Click:Connect(function()
         TextBox.Text = ""
         wait(1)
         ScreenGui:Destroy()
- 
 local CCOpeningScreen = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local CocoLogo = Instance.new("ImageLabel")
@@ -197,15 +196,15 @@ LoadBar.Size = UDim2.new(0, 0, 0, 7)
 
 local function MNQEF_fake_script()
 	local script = Instance.new('LocalScript', MainFrame)
-	wait(1)
+	wait(1.5)
 	script.Parent:TweenSize(UDim2.new(0,310,0,158), "Out", "Quad", 0.5, true)
-	wait(1)
+	wait(1.5)
 	script.Parent.LoadBar:TweenSize(UDim2.new(0.1,0,0,7), "Out", "Quad", 0.5, true)
 	script.Parent.T3.Text = "Loading..."
-	wait(1)
+	wait(1.5)
 	script.Parent.LoadBar:TweenSize(UDim2.new(0.50,0,0,7), "Out", "Quad", 0.5, true)
 	script.Parent.T3.Text = "Loading..."
-	wait(1)
+	wait(1.5)
 	script.Parent.LoadBar:TweenSize(UDim2.new(1,0,0,7), "Out", "Quad", 0.5, true)
 	script.Parent.T3.Text = "Successfully Loaded."
 	wait(1.5)
@@ -227,7 +226,7 @@ baza.Name = "baza"
 baza.Parent = ScreenGui
 baza.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
 baza.BorderSizePixel = 3
-baza.Position = UDim2.new(0.474178404, 0, 0.0194986071, 0)
+baza.Position = UDim2.new(0.5, 0, 0.5, 0)
 baza.Size = UDim2.new(0, 315, 0, 100)
 
 UICorner.Parent = baza
@@ -243,7 +242,7 @@ TextLabel.Font = Enum.Font.Arial
 TextLabel.Text = "Select Your Hub"
 TextLabel.TextColor3 = Color3.new(255, 255, 255)
 TextLabel.TextScaled = true
-TextLabel.TextSize = 15
+TextLabel.TextSize = 20
 TextLabel.TextWrapped = true
 
 pc.Name = "pc"
@@ -256,7 +255,7 @@ pc.Size = UDim2.new(0, 136, 0, 35)
 pc.Font = Enum.Font.SourceSans
 pc.Text = "SeliWare Hub"
 pc.TextColor3 = Color3.new(255, 255, 25)
-pc.TextSize = 15
+pc.TextSize = 20
 
 mobile.Name = "mobile"
 mobile.Parent = baza
@@ -266,15 +265,15 @@ mobile.BorderSizePixel = 0
 mobile.Position = UDim2.new(0.537537515, 0, 0.39784947, 0)
 mobile.Size = UDim2.new(0, 136, 0, 33)
 mobile.Font = Enum.Font.SourceSans
-mobile.Text = "Soon"
+mobile.Text = "Coming - Soon"
 mobile.TextColor3 = Color3.new(255, 255, 255)
-mobile.TextSize = 15
+mobile.TextSize = 20
 pc.MouseButton1Click:Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/SeliWare%20Hub"))()
 baza:Destroy()
 end)
 mobile.MouseButton1Click:Connect(function()
--- Soon
+-- Coming - Soon
 baza:Destroy()
 end)
 -- Scripts
