@@ -1,7 +1,7 @@
 local Player = game.Players.LocalPlayer
 local Char = Player.Character
 local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/aaaa"))()
-local UI = GUI:CreateWindow("SeliWare Hub Mega Fun Obby 🌈", "StarFox")
+local UI = GUI:CreateWindow("SeliWare Hub Mega Fun Obby 🌈 2800 Stages", "StarFox")
 local Home = UI:addPage("Main", 1, true, 6)
 local Character = UI:addPage("Character", 2, true, 6)
 Home:addButton("Auto-Complete Stages", function()
