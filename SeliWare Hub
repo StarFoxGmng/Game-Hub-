@@ -53,7 +53,7 @@ local colors = {
         TextColor = Color3.fromRGB(255, 255, 255),
         ElementColor = Color3.fromRGB(38, 45, 71)
 }
-local Window = Library.CreateLib("★★★", colors)
+local Window = Library.CreateLib("SeliWare", colors)
 local themes = {
     "SchemeColor",
     "Background",
@@ -1809,7 +1809,7 @@ Section:NewButton("Hello, "..game.Players.LocalPlayer.Name.." This Admin !", "We
 end)
 local Section = Tab:NewSection("All Admin Others")
 Section:NewButton("Infinite Yeild Delta Mobile Admin", "ButtonIfo", function()
-loadstring(game:Httpget("https://pastebin.com/raw/kbBJxm8g"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/kbBJxm8g"))()
 end)
 Section:NewButton("Infinite Yield Admin", "Admin", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
