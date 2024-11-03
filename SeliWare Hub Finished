@@ -1,6 +1,6 @@
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
+ 
 local Frame = Instance.new("Frame")
 Frame.Size = UDim2.new(0, 400, 0, 300)
 Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -10,11 +10,11 @@ Frame.BorderSizePixel = 0
 Frame.Active = true
 Frame.Draggable = true
 Frame.Parent = ScreenGui
-
+ 
 local FrameCorner = Instance.new("UICorner")
 FrameCorner.CornerRadius = UDim.new(0, 10)
 FrameCorner.Parent = Frame
-
+ 
 local Close = Instance.new("TextButton")
 Close.Size = UDim2.new(0, 40, 0, 40)
 Close.Position = UDim2.new(1, -40, 0, 0)
@@ -31,7 +31,7 @@ local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, 0, 0, 30)
 Title.Position = UDim2.new(0, 0, 0.05, 0)
 Title.Text = "Key System"
-Title.TextSize = 20
+Title.TextSize = 18
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1
 Title.Parent = Frame
@@ -40,7 +40,7 @@ local Instructions = Instance.new("TextLabel")
 Instructions.Size = UDim2.new(1, 0, 0, 30)
 Instructions.Position = UDim2.new(0, 0, 0.2, 0)
 Instructions.Text = "Enter Key To Access The Script"
-Instructions.TextSize = 20
+Instructions.TextSize = 13
 Instructions.TextColor3 = Color3.fromRGB(255, 255, 255)
 Instructions.BackgroundTransparency = 1
 Instructions.Parent = Frame
@@ -64,21 +64,21 @@ GetKey.Size = UDim2.new(0.35, 0, 0.15, 0)
 GetKey.Position = UDim2.new(0.1, 0, 0.7, 0)
 GetKey.BackgroundColor3 = Color3.fromRGB(86, 76, 251)
 GetKey.Text = "Get Key"
-GetKey.TextSize = 20
-GetKey.TextColor3 = Color3.fromRGB(200, 200, 200)
+GetKey.TextSize = 18
+GetKey.TextColor3 = Color3.fromRGB(255, 255, 255)
 GetKey.Parent = Frame
-
+ 
 local GetKeyCorner = Instance.new("UICorner")
 GetKeyCorner.CornerRadius = UDim.new(0, 5)
 GetKeyCorner.Parent = GetKey
-
+ 
 local CheckKey = Instance.new("TextButton")
 CheckKey.Size = UDim2.new(0.35, 0, 0.15, 0)
 CheckKey.Position = UDim2.new(0.55, 0, 0.7, 0)
 CheckKey.BackgroundColor3 = Color3.fromRGB(86, 76, 251)
 CheckKey.Text = "Check Key"
-CheckKey.TextSize = 20
-CheckKey.TextColor3 = Color3.fromRGB(200, 200, 200)
+CheckKey.TextSize = 18
+CheckKey.TextColor3 = Color3.fromRGB(255, 255, 255)
 CheckKey.Parent = Frame
  
 local CheckKeyCorner = Instance.new("UICorner")
@@ -593,7 +593,7 @@ TextLabel_10.BorderSizePixel = 0
 TextLabel_10.Position = UDim2.new(0.171140507, 0, 0.131681442, 0)
 TextLabel_10.Size = UDim2.new(0, 95, 0, 18)
 TextLabel_10.Font = Enum.Font.Arial
-TextLabel_10.Text = ""
+TextLabel_10.Text = "Coming - Soon"
 TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.TextScaled = true
 TextLabel_10.TextSize = 15
@@ -682,7 +682,252 @@ liniya_real.BorderSizePixel = 0
 liniya_real.Size = UDim2.new(0, 30, 0, 11)
 
 procenti.Name = "procenti"
-procenti.Parent =
+procenti.Parent = loading
+procenti.BackgroundColor3 = Color3.new(1, 1, 1)
+procenti.BackgroundTransparency = 1
+procenti.BorderColor3 = Color3.new(0, 0, 0)
+procenti.BorderSizePixel = 0
+procenti.Position = UDim2.new(0.854593635, 0, 0.131680802, 0)
+procenti.Size = UDim2.new(0, 32, 0, 16)
+procenti.Font = Enum.Font.Arial
+procenti.Text = "0%"
+procenti.TextColor3 = Color3.new(1, 1, 1)
+procenti.TextScaled = true
+procenti.TextSize = 14
+procenti.TextWrapped = true
+
+UIstroke.Parent = ScrollingFrame
+UIstroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIstroke.Color = Color3.new(255, 255, 255)
+UIstroke.Thickness = 1
+UIstroke.Transparency = 0.84
+
+-- Scripts
+
+local function DKZXC_fake_script() -- load.LocalScript 
+	local script = Instance.new('LocalScript', load)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.Visible = true
+		script.Parent.Parent.Parent.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 30, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "20%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 60, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "30%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 90, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "40%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 120, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "50%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 150, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "60%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 180, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "70%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 210, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "80%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 240, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "90%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 256, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "100%"
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading:Destroy()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/SeliWare%20Hub"))()
+	end)
+end
+coroutine.wrap(DKZXC_fake_script)()
+local function CHAILGQ_fake_script() -- load_2.LocalScript 
+	local script = Instance.new('LocalScript', load_2)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.Visible = true
+		script.Parent.Parent.Parent.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 30, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "20%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 60, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "30%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 90, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "40%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 120, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "50%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 150, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "60%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 180, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "70%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 210, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "80%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 240, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "90%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 256, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "100%"
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading:Destroy()
+		-- Coming - Soon
+	end)
+end
+coroutine.wrap(CHAILGQ_fake_script)()
+local function LBIE_fake_script() -- load_3.LocalScript 
+	local script = Instance.new('LocalScript', load_3)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.Visible = true
+		script.Parent.Parent.Parent.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 30, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "20%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 60, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "30%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 90, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "40%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 120, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "50%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 150, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "60%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 180, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "70%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 210, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "80%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 240, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "90%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 256, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "100%"
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading:Destroy()
+		-- Coming - Soon
+	end)
+end
+coroutine.wrap(LBIE_fake_script)()
+local function YEEE_fake_script() -- load_4.LocalScript 
+	local script = Instance.new('LocalScript', load_4)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.Visible = true
+		script.Parent.Parent.Parent.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 30, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "20%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 60, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "30%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 90, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "40%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 120, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "50%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 150, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "60%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 180, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "70%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 210, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "80%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 240, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "90%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 256, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "100%"
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading:Destroy()
+		-- Coming - Soon
+	end)
+end
+coroutine.wrap(YEEE_fake_script)()
+local function BNDXCL_fake_script() -- load_5.LocalScript 
+	local script = Instance.new('LocalScript', load_5)
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.Visible = true
+		script.Parent.Parent.Parent.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 30, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "20%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 60, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "30%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 90, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "40%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 120, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "50%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 150, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "60%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 180, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "70%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 210, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "80%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 240, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "90%"
+		task.wait(0.1)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.liniya.liniya_real.Size = UDim2.new(0, 256, 0, 11)
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading.procenti.Text = "100%"
+		script.Parent.Parent.Parent.Parent.Parent.Parent.loading:Destroy()
+		-- Coming - Soon
+	end)
+end
+coroutine.wrap(BNDXCL_fake_script)()
+local function EFSS_fake_script() -- closer.LocalScript 
+	local script = Instance.new('LocalScript', closer)	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(EFSS_fake_script)()
+local function ZAVTCA_fake_script() -- baza.drag 
+	local script = Instance.new('LocalScript', baza)
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.05
+	local dragStart = nil
+	local startPos = nil
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(ZAVTCA_fake_script)()
+end
+coroutine.wrap(MNQEF_fake_script)()
     else
         TextBox.PlaceholderText = "Invalid Key. Try Again."
         TextBox.Text = ""
