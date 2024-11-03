@@ -214,107 +214,475 @@ local ScreenGui = Instance.new("ScreenGui")
 local baza = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
-local pc = Instance.new("TextButton")
-local mobile = Instance.new("TextButton")
-
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local list = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local one = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local load = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local two = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local load_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local _3_frame = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local load_3 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local _4_frame = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local UICorner_11 = Instance.new("UICorner")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local load_4 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local _5_frame = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local UICorner_14 = Instance.new("UICorner")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local load_5 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local closer = Instance.new("TextButton")
+local loading = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_12 = Instance.new("TextLabel")
+local liniya = Instance.new("Frame")
+local liniya_real = Instance.new("Frame")
+local procenti = Instance.new("TextLabel")
+local UIstroke = Instance.new("UIStroke")
 -- Properties
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 baza.Name = "baza"
 baza.Parent = ScreenGui
 baza.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
-baza.BorderSizePixel = 3
-baza.Position = UDim2.new(0.5, 0, 0.5, 0)
-baza.Size = UDim2.new(0, 315, 0, 100)
+baza.BorderColor3 = Color3.new(0, 0, 0)
+baza.BorderSizePixel = 0
+baza.Position = UDim2.new(0.5, -145, 0.9, -240)
+baza.Size = UDim2.new(0, 464, 0, 290)
 
 UICorner.Parent = baza
 
 TextLabel.Parent = baza
 TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel.BackgroundTransparency = 1
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.342342347, 0, 0.0860215053, 0)
-TextLabel.Size = UDim2.new(0, 104, 0, 17)
+TextLabel.Position = UDim2.new(0.0258620698, 0, 0.0379310362, 0)
+TextLabel.Size = UDim2.new(0, 95, 0, 18)
 TextLabel.Font = Enum.Font.Arial
-TextLabel.Text = "Select Your Hub"
-TextLabel.TextColor3 = Color3.new(255, 255, 255)
+TextLabel.Text = "SeliWare"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
-TextLabel.TextSize = 20
+TextLabel.TextSize = 15
 TextLabel.TextWrapped = true
 
-pc.Name = "pc"
-pc.Parent = baza
-pc.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
-pc.BorderColor3 = Color3.new(0, 0, 0)
-pc.BorderSizePixel = 0
-pc.Position = UDim2.new(0.0300300308, 0, 0.39784947, 0)
-pc.Size = UDim2.new(0, 136, 0, 35)
-pc.Font = Enum.Font.SourceSans
-pc.Text = "SeliWare Hub"
-pc.TextColor3 = Color3.new(255, 255, 25)
-pc.TextSize = 20
+ScrollingFrame.Parent = baza
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(26, 32, 58)
+ScrollingFrame.BorderSizePixel = 3
+ScrollingFrame.Position = UDim2.new(0.0258620698, 0, 0.162068963, 0)
+ScrollingFrame.Size = UDim2.new(0, 438, 0, 229)
 
-mobile.Name = "mobile"
-mobile.Parent = baza
-mobile.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
-mobile.BorderColor3 = Color3.new(0, 0, 0)
-mobile.BorderSizePixel = 0
-mobile.Position = UDim2.new(0.537537515, 0, 0.39784947, 0)
-mobile.Size = UDim2.new(0, 136, 0, 33)
-mobile.Font = Enum.Font.SourceSans
-mobile.Text = "Coming - Soon"
-mobile.TextColor3 = Color3.new(255, 255, 255)
-mobile.TextSize = 20
-pc.MouseButton1Click:Connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/SeliWare%20Hub"))()
-baza:Destroy()
-end)
-mobile.MouseButton1Click:Connect(function()
--- Coming - Soon
-baza:Destroy()
-end)
--- Scripts
- 
-local function FRQSSY_fake_script() -- baza.LocalScript 
-	local script = Instance.new('LocalScript', baza)
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.05
-	local dragStart = nil
-	local startPos = nil
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
-end
-coroutine.wrap(FRQSSY_fake_script)()
-end
-coroutine.wrap(MNQEF_fake_script)()
+list.Name = "list"
+list.Parent = ScrollingFrame
+list.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+list.BackgroundTransparency = 1
+list.BorderColor3 = Color3.new(0, 0, 0)
+list.BorderSizePixel = 0
+list.Position = UDim2.new(0.0299999993, 0, 0.0189999994, 0)
+list.Size = UDim2.new(0, 412, 0, 108)
+
+UIListLayout.Parent = list
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 11)
+
+one.Name = "one"
+one.Parent = list
+one.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+one.BorderColor3 = Color3.new(0, 0, 0)
+one.BorderSizePixel = 0
+one.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_2.Parent = one
+
+ImageLabel.Parent = one
+ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0338983051, 0, 0.140625, 0)
+ImageLabel.Size = UDim2.new(0, 39, 0, 40)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=124591979096235"
+
+TextLabel_2.Parent = one
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.171140507, 0, 0.131681442, 0)
+TextLabel_2.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_2.Font = Enum.Font.Arial
+TextLabel_2.Text = "SeliWare Hub"
+TextLabel_2.TextColor3 = Color3.new(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 15
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = one
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.171140507, 0, 0.475431442, 0)
+TextLabel_3.Size = UDim2.new(0, 108, 0, 18)
+TextLabel_3.Font = Enum.Font.Arial
+TextLabel_3.Text = "Version: 1.0.0"
+TextLabel_3.TextColor3 = Color3.fromRGB(80, 85, 250)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 15
+TextLabel_3.TextWrapped = true
+
+load.Name = "load"
+load.Parent = one
+load.BackgroundColor3 = Color3.fromRGB(38, 45, 71)
+load.BorderColor3 = Color3.new(0, 0, 0)
+load.BorderSizePixel = 0
+load.Position = UDim2.new(0.716707051, 0, 0.21875, 0)
+load.Size = UDim2.new(0, 100, 0, 35)
+load.Font = Enum.Font.Arial
+load.Text = "Execute"
+load.TextColor3 = Color3.new(255, 255, 255)
+load.TextSize = 15
+
+UICorner_3.Parent = load
+
+two.Name = "two"
+two.Parent = list
+two.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+two.BorderColor3 = Color3.new(0, 0, 0)
+two.BorderSizePixel = 0
+two.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_4.Parent = two
+
+ImageLabel_2.Parent = two
+ImageLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_2.BackgroundTransparency = 1
+ImageLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.0338983051, 0, 0.140625, 0)
+ImageLabel_2.Size = UDim2.new(0, 39, 0, 40)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id="
+
+UICorner_5.Parent = ImageLabel_2
+UICorner_5.CornerRadius = UDim.new(0, 7)
+
+TextLabel_4.Parent = two
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.171140507, 0, 0.131681442, 0)
+TextLabel_4.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_4.Font = Enum.Font.Arial
+TextLabel_4.Text = "Coming - Soon"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 15
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = two
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.171140507, 0, 0.475431442, 0)
+TextLabel_5.Size = UDim2.new(0, 108, 0, 18)
+TextLabel_5.Font = Enum.Font.Arial
+TextLabel_5.Text = ""
+TextLabel_5.TextColor3 = Color3.fromRGB(80, 85, 250)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 15
+TextLabel_5.TextWrapped = true
+
+load_2.Name = "load"
+load_2.Parent = two
+load_2.BackgroundColor3 = Color3.fromRGB(38, 45, 71)
+load_2.BorderColor3 = Color3.new(0, 0, 0)
+load_2.BorderSizePixel = 0
+load_2.Position = UDim2.new(0.716707051, 0, 0.21875, 0)
+load_2.Size = UDim2.new(0, 100, 0, 35)
+load_2.Font = Enum.Font.Arial
+load_2.Text = "Execute"
+load_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+load_2.TextSize = 15
+
+UICorner_6.Parent = load_2
+
+_3_frame.Name = "3_frame"
+_3_frame.Parent = list
+_3_frame.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+_3_frame.BorderColor3 = Color3.new(0, 0, 0)
+_3_frame.BorderSizePixel = 0
+_3_frame.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_7.Parent = _3_frame
+
+ImageLabel_3.Parent = _3_frame
+ImageLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_3.BackgroundTransparency = 1
+ImageLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.0338983051, 0, 0.140625, 0)
+ImageLabel_3.Size = UDim2.new(0, 39, 0, 40)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id="
+
+UICorner_8.Parent = ImageLabel_3
+UICorner_8.CornerRadius = UDim.new(0, 7)
+
+TextLabel_6.Parent = _3_frame
+TextLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.171140507, 0, 0.131681442, 0)
+TextLabel_6.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_6.Font = Enum.Font.Arial
+TextLabel_6.Text = "Coming - Soon"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 15
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = _3_frame
+TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_7.BackgroundTransparency = 1
+TextLabel_7.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.171140507, 0, 0.475431442, 0)
+TextLabel_7.Size = UDim2.new(0, 108, 0, 18)
+TextLabel_7.Font = Enum.Font.Arial
+TextLabel_7.Text = ""
+TextLabel_7.TextColor3 = Color3.fromRGB(80, 85, 250)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 15
+TextLabel_7.TextWrapped = true
+
+load_3.Name = "load"
+load_3.Parent = _3_frame
+load_3.BackgroundColor3 = Color3.fromRGB(38, 45, 71)
+load_3.BorderColor3 = Color3.new(0, 0, 0)
+load_3.BorderSizePixel = 0
+load_3.Position = UDim2.new(0.716707051, 0, 0.21875, 0)
+load_3.Size = UDim2.new(0, 100, 0, 35)
+load_3.Font = Enum.Font.Arial
+load_3.Text = "Execute"
+load_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+load_3.TextSize = 15
+
+UICorner_9.Parent = load_3
+
+_4_frame.Name = "4_frame"
+_4_frame.Parent = list
+_4_frame.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+_4_frame.BorderColor3 = Color3.new(0, 0, 0)
+_4_frame.BorderSizePixel = 0
+_4_frame.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_10.Parent = _4_frame
+
+ImageLabel_4.Parent = _4_frame
+ImageLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_4.BackgroundTransparency = 1
+ImageLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0.0338983051, 0, 0.140625, 0)
+ImageLabel_4.Size = UDim2.new(0, 39, 0, 40)
+ImageLabel_4.Image = "http://www.roblox.com/asset/?id="
+
+UICorner_11.Parent = ImageLabel_4
+UICorner_11.CornerRadius = UDim.new(0, 7)
+
+TextLabel_8.Parent = _4_frame
+TextLabel_8.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_8.BackgroundTransparency = 1
+TextLabel_8.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.171140507, 0, 0.131681442, 0)
+TextLabel_8.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_8.Font = Enum.Font.Arial
+TextLabel_8.Text = "Coming - Soon"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 15
+TextLabel_8.TextWrapped = true
+
+TextLabel_9.Parent = _4_frame
+TextLabel_9.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_9.BackgroundTransparency = 1
+TextLabel_9.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.171140507, 0, 0.475431442, 0)
+TextLabel_9.Size = UDim2.new(0, 108, 0, 18)
+TextLabel_9.Font = Enum.Font.Arial
+TextLabel_9.Text = ""
+TextLabel_9.TextColor3 = Color3.fromRGB(80, 85, 250)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 15
+TextLabel_9.TextWrapped = true
+
+load_4.Name = "load"
+load_4.Parent = _4_frame
+load_4.BackgroundColor3 = Color3.fromRGB(38, 45, 71)
+load_4.BorderColor3 = Color3.new(0, 0, 0)
+load_4.BorderSizePixel = 0
+load_4.Position = UDim2.new(0.716707051, 0, 0.21875, 0)
+load_4.Size = UDim2.new(0, 100, 0, 35)
+load_4.Font = Enum.Font.Arial
+load_4.Text = "Execute"
+load_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+load_4.TextSize = 15
+
+UICorner_12.Parent = load_4
+
+_5_frame.Name = "5_frame"
+_5_frame.Parent = list
+_5_frame.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+_5_frame.BorderColor3 = Color3.new(0, 0, 0)
+_5_frame.BorderSizePixel = 0
+_5_frame.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_13.Parent = _5_frame
+
+ImageLabel_5.Parent = _5_frame
+ImageLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_5.BackgroundTransparency = 1
+ImageLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_5.BorderSizePixel = 0
+ImageLabel_5.Position = UDim2.new(0.0338983051, 0, 0.140625, 0)
+ImageLabel_5.Size = UDim2.new(0, 39, 0, 40)
+ImageLabel_5.Image = "http://www.roblox.com/asset/?id="
+
+UICorner_14.Parent = ImageLabel_5
+UICorner_14.CornerRadius = UDim.new(0, 7)
+
+TextLabel_10.Parent = _5_frame
+TextLabel_10.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_10.BackgroundTransparency = 1
+TextLabel_10.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.171140507, 0, 0.131681442, 0)
+TextLabel_10.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_10.Font = Enum.Font.Arial
+TextLabel_10.Text = ""
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 15
+TextLabel_10.TextWrapped = true
+
+TextLabel_11.Parent = _5_frame
+TextLabel_11.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_11.BackgroundTransparency = 1
+TextLabel_11.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.171140507, 0, 0.475431442, 0)
+TextLabel_11.Size = UDim2.new(0, 108, 0, 18)
+TextLabel_11.Font = Enum.Font.Arial
+TextLabel_11.Text = ""
+TextLabel_11.TextColor3 = Color3.fromRGB(80, 85, 250)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 15
+TextLabel_11.TextWrapped = true
+
+load_5.Name = "load"
+load_5.Parent = _5_frame
+load_5.BackgroundColor3 = Color3.fromRGB(38, 45, 71)
+load_5.BorderColor3 = Color3.new(0, 0, 0)
+load_5.BorderSizePixel = 0
+load_5.Position = UDim2.new(0.716707051, 0, 0.21875, 0)
+load_5.Size = UDim2.new(0, 100, 0, 35)
+load_5.Font = Enum.Font.Arial
+load_5.Text = "Execute"
+load_5.TextColor3 = Color3.new(255, 255, 255)
+load_5.TextSize = 15
+
+UICorner_15.Parent = load_5
+
+closer.Name = "closer"
+closer.Parent = baza
+closer.BackgroundColor3 = Color3.new(1, 1, 1)
+closer.BackgroundTransparency = 1
+closer.BorderColor3 = Color3.new(0, 0, 0)
+closer.BorderSizePixel = 0
+closer.Position = UDim2.new(0.928879321, 0, 0.0379310362, 0)
+closer.Size = UDim2.new(0, 19, 0, 18)
+closer.Font = Enum.Font.Arial
+closer.Text = "X"
+closer.TextColor3 = Color3.new(1, 1, 1)
+closer.TextScaled = true
+closer.TextSize = 15
+closer.TextWrapped = true
+
+loading.Name = "loading"
+loading.Parent = ScreenGui
+loading.BackgroundColor3 = Color3.fromRGB(38, 45, 71)
+loading.BorderColor3 = Color3.new(0, 0, 0)
+loading.BorderSizePixel = 0
+loading.Position = UDim2.new(0.474257082, 0, 0.449903876, 0)
+loading.Size = UDim2.new(0, 278, 0, 48)
+loading.Visible = false
+
+UICorner_16.Parent = loading
+
+TextLabel_12.Parent = loading
+TextLabel_12.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_12.BackgroundTransparency = 1
+TextLabel_12.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.0236583687, 0, 0.131680802, 0)
+TextLabel_12.Size = UDim2.new(0, 75, 0, 16)
+TextLabel_12.Font = Enum.Font.Arial
+TextLabel_12.Text = "Loading..."
+TextLabel_12.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 15
+TextLabel_12.TextWrapped = true
+
+liniya.Name = "liniya"
+liniya.Parent = loading
+liniya.BackgroundColor3 = Color3.fromRGB(38, 45, 71)
+liniya.BorderColor3 = Color3.new(1, 1, 1)
+liniya.Position = UDim2.new(0.0503597111, 0, 0.604166687, 0)
+liniya.Size = UDim2.new(0, 256, 0, 11)
+
+liniya_real.Name = "liniya_real"
+liniya_real.Parent = liniya
+liniya_real.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
+liniya_real.BorderColor3 = Color3.new(0, 0, 0)
+liniya_real.BorderSizePixel = 0
+liniya_real.Size = UDim2.new(0, 30, 0, 11)
+
+procenti.Name = "procenti"
+procenti.Parent =
     else
         TextBox.PlaceholderText = "Invalid Key. Try Again."
         TextBox.Text = ""
