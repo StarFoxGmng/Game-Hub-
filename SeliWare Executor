@@ -1,0 +1,548 @@
+local SavesGUI = Instance.new("ScreenGui")
+local MainGui = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Text = Instance.new("Folder")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local TextLabel_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local TextLabel_3 = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local TextLabel_4 = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local TextLabel_5 = Instance.new("TextLabel")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local TextLabel_6 = Instance.new("TextLabel")
+local Searchexec = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local SExec = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local SClear = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local MainSavename = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UICorner_6 = Instance.new("UICorner")
+local Mainexec = Instance.new("TextBox")
+local UICorner_7 = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local MSave = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local MExec = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local MClear = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
+local ViewAllScripts = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local Minimizebutton = Instance.new("TextButton")
+local MainSaveClear = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local ButtonGui = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+
+--Properties:
+
+SavesGUI.Name = "Saves GUI"
+SavesGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SavesGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SavesGUI.ResetOnSpawn = false
+
+MainGui.Name = "MainGui"
+MainGui.Parent = SavesGUI
+MainGui.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+MainGui.BorderColor3 = Color3.fromRGB(29, 29, 29)
+MainGui.Position = UDim2.new(0.203999996, 0, -0.589999974, 0)
+MainGui.Size = UDim2.new(0.590042353, 0, 0.545798898, 0)
+MainGui.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = MainGui
+
+Text.Name = "Text"
+Text.Parent = MainGui
+
+TextLabel.Parent = Text
+TextLabel.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.053859964, 0, 0.164037853, 0)
+TextLabel.Size = UDim2.new(0.339317769, 0, 0.07570979, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "SeliWare Executor"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 15.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel
+UITextSizeConstraint.MaxTextSize = 14
+
+TextLabel_2.Parent = Text
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.691202879, 0, 0.223974764, 0)
+TextLabel_2.Size = UDim2.new(0.24775584, 0, 0.0757097825, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Scripts Path Saved: Workspace/SavedScs"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 15.000
+TextLabel_2.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = TextLabel_2
+UITextSizeConstraint_2.MaxTextSize = 14
+
+TextLabel_3.Parent = Text
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+TextLabel_3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_3.Position = UDim2.new(0.0251346491, 0, 0.0189274456, 0)
+TextLabel_3.Size = UDim2.new(0.407540381, 0, 0.167192429, 0)
+TextLabel_3.Font = Enum.Font.Highway
+TextLabel_3.Text = "Execute Saved"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 10.000
+TextLabel_3.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = TextLabel_3
+UITextSizeConstraint_3.MaxTextSize = 40
+
+TextLabel_4.Parent = Text
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+TextLabel_4.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_4.Position = UDim2.new(0.454219043, 0, 0.0189274456, 0)
+TextLabel_4.Size = UDim2.new(0.407540381, 0, 0.167192429, 0)
+TextLabel_4.Font = Enum.Font.Highway
+TextLabel_4.Text = "Execute Scripts"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 10.000
+TextLabel_4.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = TextLabel_4
+UITextSizeConstraint_4.MaxTextSize = 40
+
+TextLabel_5.Parent = Text
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.454219043, 0, 0.236593068, 0)
+TextLabel_5.Size = UDim2.new(0.183123872, 0, 0.07570979, 0)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Title Name Here."
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 15.000
+TextLabel_5.TextWrapped = true
+
+UITextSizeConstraint_5.Parent = TextLabel_5
+UITextSizeConstraint_5.MaxTextSize = 18
+
+TextLabel_6.Parent = Text
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
+TextLabel_6.Position = UDim2.new(0, 0, 10, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Made By Ahmad Syaril"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextSize = 14.000
+
+Searchexec.Name = "Searchexec"
+Searchexec.Parent = MainGui
+Searchexec.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Searchexec.Position = UDim2.new(0.0466786362, 0, 0.312302828, 0)
+Searchexec.Size = UDim2.new(0.359066427, 0, 0.470031559, 0)
+Searchexec.ClearTextOnFocus = false
+Searchexec.Font = Enum.Font.Code
+Searchexec.MultiLine = true
+Searchexec.Text = "Script Here..."
+Searchexec.TextColor3 = Color3.fromRGB(255, 255, 255)
+Searchexec.TextSize = 10.000
+Searchexec.TextWrapped = true
+Searchexec.TextXAlignment = Enum.TextXAlignment.Left
+Searchexec.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_2.Parent = Searchexec
+
+UITextSizeConstraint_6.Parent = Searchexec
+UITextSizeConstraint_6.MaxTextSize = 30
+
+SExec.Name = "SExec"
+SExec.Parent = MainGui
+SExec.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
+SExec.BorderColor3 = Color3.fromRGB(18, 18, 18)
+SExec.Position = UDim2.new(0.0484739691, 0, 0.826498449, 0)
+SExec.Size = UDim2.new(0.163375229, 0, 0.10410095, 0)
+SExec.Font = Enum.Font.Nunito
+SExec.Text = "Execute"
+SExec.TextColor3 = Color3.fromRGB(255, 255, 255)
+SExec.TextScaled = true
+SExec.TextSize = 20.000
+SExec.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 6)
+UICorner_3.Parent = SExec
+
+UITextSizeConstraint_7.Parent = SExec
+UITextSizeConstraint_7.MaxTextSize = 20
+
+SClear.Name = "SClear"
+SClear.Parent = MainGui
+SClear.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
+SClear.BorderColor3 = Color3.fromRGB(18, 18, 18)
+SClear.Position = UDim2.new(0.229802519, 0, 0.826498449, 0)
+SClear.Size = UDim2.new(0.163375229, 0, 0.10410095, 0)
+SClear.Font = Enum.Font.Nunito
+SClear.Text = "Clear"
+SClear.TextColor3 = Color3.fromRGB(255, 255, 255)
+SClear.TextScaled = true
+SClear.TextSize = 20.000
+SClear.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 6)
+UICorner_4.Parent = SClear
+
+UITextSizeConstraint_8.Parent = SClear
+UITextSizeConstraint_8.MaxTextSize = 20
+
+MainSavename.Name = "MainSavename"
+MainSavename.Parent = MainGui
+MainSavename.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+MainSavename.Position = UDim2.new(0.454219043, 0, 0.312302828, 0)
+MainSavename.Size = UDim2.new(0.384819329, 0, 0.056782335, 0)
+MainSavename.ClearTextOnFocus = false
+MainSavename.Font = Enum.Font.Code
+MainSavename.Text = "Script Here..."
+MainSavename.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainSavename.TextSize = 5.000
+MainSavename.TextWrapped = true
+MainSavename.TextXAlignment = Enum.TextXAlignment.Left
+MainSavename.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_5.Parent = MainSavename
+
+UITextSizeConstraint_9.Parent = MainSavename
+UITextSizeConstraint_9.MaxTextSize = 14
+
+ScrollingFrame.Parent = MainGui
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(17, 17, 17)
+ScrollingFrame.Position = UDim2.new(0.454219043, 0, 0.391167194, 0)
+ScrollingFrame.Size = UDim2.new(0.513464987, 0, 0.394321769, 0)
+ScrollingFrame.ScrollBarThickness = 13
+
+UICorner_6.Parent = ScrollingFrame
+
+Mainexec.Name = "Mainexec"
+Mainexec.Parent = ScrollingFrame
+Mainexec.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Mainexec.Size = UDim2.new(0, 286, 0, 629)
+Mainexec.ClearTextOnFocus = false
+Mainexec.Font = Enum.Font.Code
+Mainexec.MultiLine = true
+Mainexec.Text = "Script Here..."
+Mainexec.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mainexec.TextSize = 10.000
+Mainexec.TextWrapped = true
+Mainexec.TextXAlignment = Enum.TextXAlignment.Left
+Mainexec.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_7.Parent = Mainexec
+
+UIAspectRatioConstraint.Parent = Mainexec
+UIAspectRatioConstraint.AspectRatio = 0.430
+
+MSave.Name = "MSave"
+MSave.Parent = MainGui
+MSave.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
+MSave.BorderColor3 = Color3.fromRGB(18, 18, 18)
+MSave.Position = UDim2.new(0.804308772, 0, 0.826498449, 0)
+MSave.Size = UDim2.new(0.134649917, 0, 0.10410095, 0)
+MSave.Font = Enum.Font.Nunito
+MSave.Text = "Save"
+MSave.TextColor3 = Color3.fromRGB(255, 255, 255)
+MSave.TextScaled = true
+MSave.TextSize = 20.000
+MSave.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 6)
+UICorner_8.Parent = MSave
+
+UITextSizeConstraint_10.Parent = MSave
+UITextSizeConstraint_10.MaxTextSize = 20
+
+MExec.Name = "MExec"
+MExec.Parent = MainGui
+MExec.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
+MExec.BorderColor3 = Color3.fromRGB(18, 18, 18)
+MExec.Position = UDim2.new(0.454219043, 0, 0.826498449, 0)
+MExec.Size = UDim2.new(0.163375229, 0, 0.10410095, 0)
+MExec.Font = Enum.Font.Nunito
+MExec.Text = "Execute"
+MExec.TextColor3 = Color3.fromRGB(255, 255, 255)
+MExec.TextScaled = true
+MExec.TextSize = 20.000
+MExec.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 6)
+UICorner_9.Parent = MExec
+
+UITextSizeConstraint_11.Parent = MExec
+UITextSizeConstraint_11.MaxTextSize = 20
+
+MClear.Name = "MClear"
+MClear.Parent = MainGui
+MClear.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
+MClear.BorderColor3 = Color3.fromRGB(18, 18, 18)
+MClear.Position = UDim2.new(0.62657094, 0, 0.826498449, 0)
+MClear.Size = UDim2.new(0.163375229, 0, 0.10410095, 0)
+MClear.Font = Enum.Font.Nunito
+MClear.Text = "Clear"
+MClear.TextColor3 = Color3.fromRGB(255, 255, 255)
+MClear.TextScaled = true
+MClear.TextSize = 20.000
+MClear.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 6)
+UICorner_10.Parent = MClear
+
+UITextSizeConstraint_12.Parent = MClear
+UITextSizeConstraint_12.MaxTextSize = 20
+
+ViewAllScripts.Name = "ViewAllScripts"
+ViewAllScripts.Parent = MainGui
+ViewAllScripts.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+ViewAllScripts.BorderColor3 = Color3.fromRGB(18, 18, 18)
+ViewAllScripts.Position = UDim2.new(0.0484739691, 0, 0.236593053, 0)
+ViewAllScripts.Size = UDim2.new(0.359066427, 0, 0.0504731871, 0)
+ViewAllScripts.Font = Enum.Font.Nunito
+ViewAllScripts.Text = "Check All Scripts (Wip)"
+ViewAllScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+ViewAllScripts.TextScaled = true
+ViewAllScripts.TextSize = 18.000
+ViewAllScripts.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0, 6)
+UICorner_11.Parent = ViewAllScripts
+
+UITextSizeConstraint_13.Parent = ViewAllScripts
+UITextSizeConstraint_13.MaxTextSize = 18
+
+Minimizebutton.Name = "Minimize button"
+Minimizebutton.Parent = MainGui
+Minimizebutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimizebutton.BackgroundTransparency = 1.000
+Minimizebutton.Position = UDim2.new(0.894075394, 0, 0, 0)
+Minimizebutton.Size = UDim2.new(0, 35, 0, 20)
+Minimizebutton.Font = Enum.Font.SourceSans
+Minimizebutton.Text = "-"
+Minimizebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimizebutton.TextSize = 50.000
+
+MainSaveClear.Name = "MainSaveClear"
+MainSaveClear.Parent = MainGui
+MainSaveClear.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
+MainSaveClear.BorderColor3 = Color3.fromRGB(22, 22, 22)
+MainSaveClear.Position = UDim2.new(0.849560738, 0, 0.312302828, 0)
+MainSaveClear.Size = UDim2.new(0, 44, 0, 18)
+MainSaveClear.Font = Enum.Font.SourceSans
+MainSaveClear.Text = "Save Tab"
+MainSaveClear.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainSaveClear.TextSize = 10.000
+
+UICorner_12.Parent = MainSaveClear
+
+ButtonGui.Name = "ButtonGui"
+ButtonGui.Parent = SavesGUI
+ButtonGui.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+ButtonGui.Position = UDim2.new(0.886600554, 0, 0, 0)
+ButtonGui.Size = UDim2.new(0, 64, 0, 31)
+ButtonGui.Font = Enum.Font.SourceSans
+ButtonGui.Text = "Open"
+ButtonGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+ButtonGui.TextSize = 15.000
+
+UICorner_13.Parent = ButtonGui
+
+-- Scripts:
+
+local function IKPYPSX_fake_script() -- SExec.LocalScript 
+	local script = Instance.new('LocalScript', SExec)
+
+	--[[
+		Hello, This is my own gui, this is was open source!
+		Since this script was open source, please Give credit when you showcasing this or modify this script!
+		Also, I want to thank to you who using this script <3
+		
+		-Sent By AZY#0348
+		]]
+	local txtbox = script.Parent.Parent.Searchexec
+	local btn = script.Parent
+	
+	btn.MouseButton1Up:Connect(function()
+		loadstring(readfile("SavedScs/"..txtbox.Text..""))()
+	end)
+end
+coroutine.wrap(IKPYPSX_fake_script)()
+local function JVXNXHU_fake_script() -- SClear.LocalScript 
+	local script = Instance.new('LocalScript', SClear)
+
+	--[[
+	Hello, This is my own gui, this is was open source!
+	Since this script was open source, please Give credit when you showcasing this or modify this script!
+	Also, I want to thank to you who using this script <3
+	
+	-Sent By AZY#0348
+	]]local txtbox = script.Parent.Parent.Searchexec
+	local btn = script.Parent
+	
+	btn.MouseButton1Up:Connect(function()
+		txtbox.Text = ""
+	end)
+end
+coroutine.wrap(JVXNXHU_fake_script)()
+local function NQQZT_fake_script() -- MSave.LocalScript 
+	local script = Instance.new('LocalScript', MSave)
+
+	--[[
+		Hello, This is my own gui, this is was open source!
+		Since this script was open source, please Give credit when you showcasing this or modify this script!
+		Also, I want to thank to you who using this script <3
+		
+		-Sent By AZY#0348
+		]]
+	local txtbox = script.Parent.Parent.ScrollingFrame.Mainexec
+	local title = script.Parent.Parent.MainSavename
+	local btn = script.Parent
+	
+	btn.MouseButton1Up:Connect(function()
+		if not (isfolder == "SavedScs") then
+			makefolder("SavedScs")
+		end
+		writefile("SavedScs/"..title.Text..".txt", ""..txtbox.Text.."")
+	
+	end)
+end
+coroutine.wrap(NQQZT_fake_script)()
+local function AGWWB_fake_script() -- MExec.LocalScript 
+	local script = Instance.new('LocalScript', MExec)
+
+	--[[
+	Hello, This is my own gui, this is was open source!
+	Since this script was open source, please Give credit when you showcasing this or modify this script!
+	Also, I want to thank to you who using this script <3
+	
+	-Sent By AZY#0348
+	]]
+	local btn = script.Parent
+	
+	btn.MouseButton1Up:Connect(function()
+		loadstring(script.Parent.Parent.ScrollingFrame.Mainexec.Text)()
+	end)
+end
+coroutine.wrap(AGWWB_fake_script)()
+local function BNQSV_fake_script() -- MClear.LocalScript 
+	local script = Instance.new('LocalScript', MClear)
+
+	--[[
+	Hello, This is my own gui, this is was open source!
+	Since this script was open source, please Give credit when you showcasing this or modify this script!
+	Also, I want to thank to you who using this script <3
+	
+	-Sent By AZY#0348
+	]]
+	local txtbox = script.Parent.Parent.ScrollingFrame.Mainexec
+	local btn = script.Parent
+	
+	btn.MouseButton1Up:Connect(function()
+		txtbox.Text = ""
+	end)
+end
+coroutine.wrap(BNQSV_fake_script)()
+local function UPYH_fake_script() -- Minimizebutton.LocalScript 
+	local script = Instance.new('LocalScript', Minimizebutton)
+
+	--[[
+	Hello, This is my own gui, this is was open source!
+	Since this script was open source, please Give credit when you showcasing this or modify this script!
+	Also, I want to thank to you who using this script <3
+	
+	-Sent By AZY#0348
+	]]
+	function click()
+		script.Parent.Parent.Parent.ButtonGui.Visible = true
+		script.Disabled = true
+		script.Parent.Parent:TweenPosition(
+	
+			UDim2.new(0.204, 0, -0.59, 0),
+			"InOut",
+			"Quad",
+			0.5,
+			false
+	
+	
+		)
+	
+		wait(1)
+		script.Disabled = false
+		script.Parent.Parent.Visible = false
+	end
+	script.Parent.MouseButton1Click:Connect(click)
+end
+coroutine.wrap(UPYH_fake_script)()
+local function MXFUOL_fake_script() -- MainSaveClear.LocalScript 
+	local script = Instance.new('LocalScript', MainSaveClear)
+
+	--[[
+	Hello, This is my own gui, this is was open source!
+	Since this script was open source, please Give credit when you showcasing this or modify this script!
+	Also, I want to thank to you who using this script <3
+	
+	-Sent By AZY#0348
+	]]
+	local txtbox = script.Parent.Parent.MainSavename
+	local btn = script.Parent
+	
+	btn.MouseButton1Up:Connect(function()
+		txtbox.Text = ""
+	end)
+end
+coroutine.wrap(MXFUOL_fake_script)()
+-- ButtonGui.LocalScript is disabled.
+local function POSRGLY_fake_script() -- ButtonGui.LocalScript 
+	local script = Instance.new('LocalScript', ButtonGui)
+
+	--[[
+	Hello, This is my own gui, this is was open source!
+	Since this script was open source, please Give credit when you showcasing this or modify this script!
+	Also, I want to thank to you who using this script <3
+	
+	-Sent By AZY#0348
+	]]
+	function click()
+		script.Parent.Visible = false
+		script.Disabled = true
+		script.Parent.Parent.MainGui.Visible = true
+		script.Parent.Parent.MainGui:TweenPosition(
+	
+			UDim2.new(0.202, 0, 0.227, 0),
+			"InOut",
+			"Quad",
+			0.5,
+			false
+	
+		)
+		wait(1)
+		script.Disabled = false
+	end
+	script.Parent.MouseButton1Click:Connect(click)
+end
+coroutine.wrap(POSRGLY_fake_script)()
