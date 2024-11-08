@@ -52,43 +52,10 @@ elseif cht:match(";Btools") then
 loadstring(game:HttpGet("https://pastebin.com/raw/93gZJUGZ", true))();
 elseif cht:match(";Audio Spam") then
 loadstring(game:HttpGet("https://pastebin.com/raw/mjRLj5dn",true))();
-elseif cht:match(";2006 Animation") then
-loadstring(game:HttpGet("https://pastebin.com/raw/pYjkmxUe", true))();
-elseif cht:match(";Noclip Tool") then
-loadstring(game:HttpGet("https://pastebin.com/raw/iycHRxdb", true))();
-elseif cht:match(";Mesh Hat") then
-loadstring(game:HttpGet("https://pastebin.com/raw/A373EAiP", true))();
-elseif cht:match(";Headless") then
-loadstring(game:HttpGet("https://pastebin.com/raw/GmAiL8Hh", true))();
-elseif cht:match(";Server Finder") then
-loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
-elseif cht:match(";Levitation") then
-loadstring(game:HttpGet("https://pastebin.com/raw/19tgQYAQ", true))();
-elseif cht:match(";Jump Power 100") then
-loadstring(game:HttpGet("https://pastebin.com/raw/gAnw8FDW", true))();
-elseif cht:match(";jump Power 50") then
-loadstring(game:HttpGet("https://pastebin.com/raw/JfCDcYFs", true))();
-elseif cht:match(";Speed 100") then
-loadstring(game:HttpGet("https://pastebin.com/raw/xxsjQVVy", true))();
-elseif cht:match(";Speed 16") then
-loadstring(game:HttpGet("https://pastebin.com/raw/ftZiKUGZ", true))();
-elseif cht:match(";Infinite Jump") then
-loadstring(game:HttpGet("https://pastebin.com/raw/bC97eAyR", true))();
-elseif cht:match(";Esp") then
-loadstring(game:HttpGet("https://pastebin.com/raw/BVf62CQ4", true))();
 elseif cht:match(";Cmds") then
-game.StarterGui:SetCore("SendNotification", {
-    Title = "SeliWare Admin";
-    Text = "Rtx ;Shiftlock ;Tptool ;Gx Hub ;Netless ;Mesh Spin ;Tall R15 ;Chat Bypass ;Fling Kill Cmds ;Fly ;Infinte Yeild Admin ;Reset ;Hitbox ;Tool Gui ;Kill Tool Gui ;Kill Bot ;Btools";
-     Icon = "http://www.roblox.com/asset/?id=124591979096235";
-     Duration = 5
-})
-game.StarterGui:SetCore("SendNotification", {
-    Title = "SeliWare Admin";
-    Text = "Audios Spam ;2006 Animation ;Noclip Tool ;Mesh Hat ;Headless ;Server Finder ;Levitation ;Creeper ;Speed 100 ;Speed 16 ;Jump Power 100 Jump Power 50 ; Infinite Jump ;Esp";
-     Icon = "http://www.roblox.com/asset/?id=124591979096235";
-     Duration = 5
-})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/Commands"))()
+elseif cht:match(";Commands") then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/Commands"))()
 	end
 end)
 game:GetService("StarterGui"):SetCore("SendNotification",{
