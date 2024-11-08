@@ -1,0 +1,528 @@
+local ScreenGui = Instance.new("ScreenGui")
+local baza = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local list = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local one = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local two = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local _3_frame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local _4_frame = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local _5_frame = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local _6_frame = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local _7_frame = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local _8_frame = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_16 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
+local _9_frame = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+local _10_frame = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local TextLabel_20 = Instance.new("TextLabel")
+local TextLabel_21 = Instance.new("TextLabel")
+local closer = Instance.new("TextButton")
+-- Properties
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+baza.Name = "baza"
+baza.Parent = ScreenGui
+baza.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+baza.BorderColor3 = Color3.new(0, 0, 0)
+baza.BorderSizePixel = 0
+baza.Position = UDim2.new(0.5, -145, 0.9, -240)
+baza.Size = UDim2.new(0, 464, 0, 290)
+
+UICorner.Parent = baza
+
+TextLabel.Parent = baza
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0258620698, 0, 0.0379310362, 0)
+TextLabel.Size = UDim2.new(0, 95, 0, 18)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Commands"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 15
+TextLabel.TextWrapped = true
+
+ScrollingFrame.Parent = baza
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(80, 85, 250)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(26, 32, 58)
+ScrollingFrame.BorderSizePixel = 3
+ScrollingFrame.Position = UDim2.new(0.0258620698, 0, 0.162068963, 0)
+ScrollingFrame.Size = UDim2.new(0, 438, 0, 229)
+
+list.Name = "list"
+list.Parent = ScrollingFrame
+list.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+list.BackgroundTransparency = 1
+list.BorderColor3 = Color3.new(0, 0, 0)
+list.BorderSizePixel = 0
+list.Position = UDim2.new(0.0299999993, 0, 0.0189999994, 0)
+list.Size = UDim2.new(0, 412, 0, 108)
+
+UIListLayout.Parent = list
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 11)
+
+one.Name = "one"
+one.Parent = list
+one.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+one.BorderColor3 = Color3.new(0, 0, 0)
+one.BorderSizePixel = 0
+one.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_2.Parent = one
+
+TextLabel_2.Parent = one
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0.5, 0.5)
+TextLabel_2.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_2.Font = Enum.Font.Arial
+TextLabel_2.Text = ";Rtx"
+TextLabel_2.TextColor3 = Color3.new(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 15
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = one
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 0.3, 0.2)
+TextLabel_3.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_3.Font = Enum.Font.Arial
+TextLabel_3.Text = ";Gx Hub"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 15
+TextLabel_3.TextWrapped = true
+
+two.Name = "two"
+two.Parent = list
+two.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+two.BorderColor3 = Color3.new(0, 0, 0)
+two.BorderSizePixel = 0
+two.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_3.Parent = two
+
+TextLabel_4.Parent = two
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0, 0.5, 0.5)
+TextLabel_4.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_4.Font = Enum.Font.Arial
+TextLabel_4.Text = ";Chat Bypass"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 15
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = two
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0, 0.3, 0.2)
+TextLabel_5.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_5.Font = Enum.Font.Arial
+TextLabel_5.Text = ";Mesh Spin"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 15
+TextLabel_5.TextWrapped = true
+
+_3_frame.Name = "3_frame"
+_3_frame.Parent = list
+_3_frame.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+_3_frame.BorderColor3 = Color3.new(0, 0, 0)
+_3_frame.BorderSizePixel = 0
+_3_frame.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_4.Parent = _3_frame
+
+TextLabel_6.Parent = _3_frame
+TextLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0, 0.5, 0.5)
+TextLabel_6.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_6.Font = Enum.Font.Arial
+TextLabel_6.Text = ";Loop Fling All"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 15
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = _3_frame
+TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_7.BackgroundTransparency = 1
+TextLabel_7.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0, 0.3, 0.2)
+TextLabel_7.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_7.Font = Enum.Font.Arial
+TextLabel_7.Text = ";Fling Kill"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 15
+TextLabel_7.TextWrapped = true
+
+_4_frame.Name = "4_frame"
+_4_frame.Parent = list
+_4_frame.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+_4_frame.BorderColor3 = Color3.new(0, 0, 0)
+_4_frame.BorderSizePixel = 0
+_4_frame.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_5.Parent = _4_frame
+
+TextLabel_8.Parent = _4_frame
+TextLabel_8.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_8.BackgroundTransparency = 1
+TextLabel_8.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0, 0.5, 0.5)
+TextLabel_8.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_8.Font = Enum.Font.Arial
+TextLabel_8.Text = ";Netless"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 15
+TextLabel_8.TextWrapped = true
+
+TextLabel_9.Parent = _4_frame
+TextLabel_9.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_9.BackgroundTransparency = 1
+TextLabel_9.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0, 0.3, 0.2)
+TextLabel_9.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_9.Font = Enum.Font.Arial
+TextLabel_9.Text = ";Tp Tool"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 15
+TextLabel_9.TextWrapped = true
+
+_5_frame.Name = "5_frame"
+_5_frame.Parent = list
+_5_frame.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+_5_frame.BorderColor3 = Color3.new(0, 0, 0)
+_5_frame.BorderSizePixel = 0
+_5_frame.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_6.Parent = _5_frame
+
+TextLabel_10.Parent = _5_frame
+TextLabel_10.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_10.BackgroundTransparency = 1
+TextLabel_10.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0, 0.5, 0.5)
+TextLabel_10.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_10.Font = Enum.Font.Arial
+TextLabel_10.Text = ";Reset"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 15
+TextLabel_10.TextWrapped = true
+
+TextLabel_11.Parent = _5_frame
+TextLabel_11.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_11.BackgroundTransparency = 1
+TextLabel_11.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0, 0.3, 0.2)
+TextLabel_11.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_11.Font = Enum.Font.Arial
+TextLabel_11.Text = ";Kill Bot"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 15
+TextLabel_11.TextWrapped = true
+
+_6_frame.Name = "6_frame"
+_6_frame.Parent = list
+_6_frame.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+_6_frame.BorderColor3 = Color3.new(0, 0, 0)
+_6_frame.BorderSizePixel = 0
+_6_frame.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_7.Parent = _6_frame
+
+TextLabel_12.Parent = _6_frame
+TextLabel_12.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_12.BackgroundTransparency = 1
+TextLabel_12.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0, 0.5, 0.5)
+TextLabel_12.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_12.Font = Enum.Font.Arial
+TextLabel_12.Text = ";Tall R15"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 15
+TextLabel_12.TextWrapped = true
+
+TextLabel_13.Parent = _6_frame
+TextLabel_13.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_13.BackgroundTransparency = 1
+TextLabel_13.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0, 0.3, 0.2)
+TextLabel_13.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_13.Font = Enum.Font.Arial
+TextLabel_13.Text = ";Infinite Yeild Admin"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 15
+TextLabel_13.TextWrapped = true
+
+_7_frame.Name = "7_frame"
+_7_frame.Parent = list
+_7_frame.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+_7_frame.BorderColor3 = Color3.new(0, 0, 0)
+_7_frame.BorderSizePixel = 0
+_7_frame.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_8.Parent = _7_frame
+
+TextLabel_14.Parent = _7_frame
+TextLabel_14.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_14.BackgroundTransparency = 1
+TextLabel_14.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0, 0.5, 0.5)
+TextLabel_14.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_14.Font = Enum.Font.Arial
+TextLabel_14.Text = ";Shiftlock"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 15
+TextLabel_14.TextWrapped = true
+
+TextLabel_15.Parent = _7_frame
+TextLabel_15.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_15.BackgroundTransparency = 1
+TextLabel_15.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(0, 0.3, 0.2)
+TextLabel_15.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_15.Font = Enum.Font.Arial
+TextLabel_15.Text = ";Fly"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 15
+TextLabel_15.TextWrapped = true
+
+_8_frame.Name = "8_frame"
+_8_frame.Parent = list
+_8_frame.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+_8_frame.BorderColor3 = Color3.new(0, 0, 0)
+_8_frame.BorderSizePixel = 0
+_8_frame.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_9.Parent = _8_frame
+
+TextLabel_16.Parent = _8_frame
+TextLabel_16.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_16.BackgroundTransparency = 1
+TextLabel_16.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(0, 0.5, 0.5)
+TextLabel_16.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_16.Font = Enum.Font.Arial
+TextLabel_16.Text = ";Creeper"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 15
+TextLabel_16.TextWrapped = true
+
+TextLabel_17.Parent = _8_frame
+TextLabel_17.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_17.BackgroundTransparency = 1
+TextLabel_17.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(0, 0.3, 0.2)
+TextLabel_17.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_17.Font = Enum.Font.Arial
+TextLabel_17.Text = ";Hitbox"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 15
+TextLabel_17.TextWrapped = true
+
+_9_frame.Name = "9_frame"
+_9_frame.Parent = list
+_9_frame.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+_9_frame.BorderColor3 = Color3.new(0, 0, 0)
+_9_frame.BorderSizePixel = 0
+_9_frame.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_10.Parent = _9_frame
+
+TextLabel_18.Parent = _9_frame
+TextLabel_18.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_18.BackgroundTransparency = 1
+TextLabel_18.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_18.BorderSizePixel = 0
+TextLabel_18.Position = UDim2.new(0, 0.5, 0.5)
+TextLabel_18.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_18.Font = Enum.Font.Arial
+TextLabel_18.Text = ";Kill Tool Gui"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 15
+TextLabel_18.TextWrapped = true
+
+TextLabel_19.Parent = _9_frame
+TextLabel_19.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_19.BackgroundTransparency = 1
+TextLabel_19.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_19.BorderSizePixel = 0
+TextLabel_19.Position = UDim2.new(0, 0.3, 0.2)
+TextLabel_19.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_19.Font = Enum.Font.Arial
+TextLabel_19.Text = ";Tool Gui"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 15
+TextLabel_19.TextWrapped = true
+
+_10_frame.Name = "10_frame"
+_10_frame.Parent = list
+_10_frame.BackgroundColor3 = Color3.fromRGB(26, 32, 58)
+_10_frame.BorderColor3 = Color3.new(0, 0, 0)
+_10_frame.BorderSizePixel = 0
+_10_frame.Size = UDim2.new(0, 413, 0, 64)
+
+UICorner_10.Parent = _10_frame
+
+TextLabel_20.Parent = _10_frame
+TextLabel_20.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_20.BackgroundTransparency = 1
+TextLabel_20.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_20.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0, 0.5, 0.5)
+TextLabel_20.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_20.Font = Enum.Font.Arial
+TextLabel_20.Text = ";Btools"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 15
+TextLabel_20.TextWrapped = true
+
+TextLabel_21.Parent = _10_frame
+TextLabel_21.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_21.BackgroundTransparency = 1
+TextLabel_21.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_21.BorderSizePixel = 0
+TextLabel_21.Position = UDim2.new(0, 0.3, 0.2)
+TextLabel_21.Size = UDim2.new(0, 95, 0, 18)
+TextLabel_21.Font = Enum.Font.Arial
+TextLabel_21.Text = ";Audio Spam"
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.TextScaled = true
+TextLabel_21.TextSize = 15
+TextLabel_21.TextWrapped = true
+
+closer.Name = "closer"
+closer.Parent = baza
+closer.BackgroundColor3 = Color3.new(1, 1, 1)
+closer.BackgroundTransparency = 1
+closer.BorderColor3 = Color3.new(0, 0, 0)
+closer.BorderSizePixel = 0
+closer.Position = UDim2.new(0.928879321, 0, 0.0379310362, 0)
+closer.Size = UDim2.new(0, 20, 0, 20)
+closer.Font = Enum.Font.Arial
+closer.Text = "X"
+closer.TextColor3 = Color3.fromRGB(255, 255, 255)
+closer.TextScaled = true
+closer.TextSize = 15
+closer.TextWrapped = true
+
+-- Scripts
+
+local function EFSS_fake_script() -- closer.LocalScript 
+	local script = Instance.new('LocalScript', closer)	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(EFSS_fake_script)()
+local function ZAVTCA_fake_script() -- baza.drag 
+	local script = Instance.new('LocalScript', baza)
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.05
+	local dragStart = nil
+	local startPos = nil
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(ZAVTCA_fake_script)()
