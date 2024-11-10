@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StarFoxGmng/Game-Hub-/refs/heads/main/SeliWare%20Logo%20Screen"))()
+wait(3)
 --[[
                               Script coded by StarFoxGmng#0 and Ahmad Syaril#0
 
